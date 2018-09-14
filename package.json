@@ -27,6 +27,7 @@
     "onchange": "^4.1.0"
   },
   "dependencies": {
+    "hoek": "^5.0.4",
     "rimraf": "^2.6.2"
   }
 }
