@@ -1,0 +1,32 @@
+{
+  "name": "Layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm-run-all test:*",
+    "test:html": "globstar nu-html-checker *.html",
+    "build": "npm-run-all build:* test",
+    "build:clean": "rimraf css/*.css",
+    "build:sass": "node-sass --output-style  compact -o css sass",
+    "build:autoprefixer": "autoprefixer-cli css/style.css",
+    "build-dev:sass": "node-sass --output-style expanded --source map true -o css sass",
+    "watch": "npm-run-all build -p watch:*",
+    "watch:sassprefixer": "onchange sass/*.scss -- npm-run-all sassprefixer:*",
+    "sassprefixer:sass": "node-sass --output-style expanded --source-map true -o css sass",
+    "sassprefixer:autoprefixer": "autoprefixer-cli css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "browser-sync": "^2.24.7",
+    "node-sass": "^4.9.3",
+    "nu-html-checker": "^0.1.0",
+    "onchange": "^4.1.0"
+  },
+  "dependencies": {
+    "rimraf": "^2.6.2"
+  }
+}
