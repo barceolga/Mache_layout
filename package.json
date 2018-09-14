@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "hoek": "^5.0.4",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "superagent": "^3.8.3"
   }
 }
