@@ -1677,6 +1677,85 @@ body * {
   .show .default-button {
     margin-bottom: 50px;
   }
+  .download {
+    width: 100%;
+    height: auto;
+  }
+  .download .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .download .download_image {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin: auto;
+    height: auto;
+    width: 100vw;
+  }
+  .download .download_image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 90%;
+    height: 90%;
+    margin: 40px auto 10px auto;
+  }
+  .download .download_content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    margin: 0 auto;
+    width: auto;
+  }
+  .download .download_content-title {
+    margin-left: 0;
+  }
+  .download .download_content-title h2 {
+    padding: 0 10px;
+    text-align: center;
+  }
+  .download .download_content-rectangle {
+    width: 100%;
+  }
+  .download .rectangle-decorative {
+    margin: 22px auto;
+  }
+  .download .download_content-paragraph {
+    margin: 0 auto 25px auto;
+  }
+  .download .download_content-paragraph p {
+    line-height: 33px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .download .download_content-button {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .download .download_content-button default-button {
+    margin: 0 auto 25px auto;
+  }
+  .footer {
+    height: auto;
+    width: 100%;
+  }
+  .footer .footer_copyright {
+    margin-top: 25px;
+  }
+  .footer .footer_design {
+    margin-bottom: 25px;
+  }
 }
 
 @media (min-width: 992px) {

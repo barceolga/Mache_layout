@@ -1748,7 +1748,86 @@ $desktop: "(min-width: 992px)";
 		 margin-bottom: 50px;
 	 }
  }
+ .download {
+	 width: 100%;
+	 height: auto;
+ }
 
+ .download {
+	 .row {
+		 @include clearfix;
+	 }
+
+	 .download_image {
+		 display: flex;
+		 flex-direction: column;
+		 align-items: center;
+		 justify-content: center;
+		 margin: auto;
+		 height: auto;
+		 width: 100vw;
+	 }
+
+	 .download_image
+		 img {
+			object-fit:cover;
+			 width: 90%;
+			 height: 90%;
+			 margin: 40px auto 10px auto;
+		 }
+
+	 .download_content {
+		 display: flex;
+		 flex-direction: column;
+		 justify-content: flex-start;
+		 align-items: flex-start;
+		 margin: 0 auto;
+		 width: auto;
+	 }
+
+	 .download_content-title {
+		 margin-left: 0;
+		 h2 {
+			 padding: 0 10px;
+			 text-align: center;
+		 }
+	 }
+
+	 .download_content-rectangle {
+		 width: 100%;
+	 }
+
+	 .rectangle-decorative {
+		 margin: 22px auto;
+	 }
+
+	 .download_content-paragraph{
+		 margin: 0 auto 25px auto;
+		 p {
+			 line-height: 33px;
+			 text-align: center;
+			 padding: 0 10px;
+		 }
+	 }
+
+	 .download_content-button {
+		 width: 100%;
+		 default-button {
+			 margin: 0 auto 25px auto;
+		 }
+		 margin-bottom: 50px;
+	 }
+ }
+ .footer {
+	 height: auto;
+	 width: 100%;
+	 .footer_copyright {
+		 margin-top: 25px;
+	 }
+	 .footer_design {
+		 margin-bottom: 25px;
+	 }
+ }
 }
 
 @media #{$desktop} {
