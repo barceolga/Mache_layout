@@ -84,14 +84,14 @@ body {
 }
 
 $phone: "(max-width: 767px)";
-$tablet: "(min-width: 768px)";
+$tablet: "(min-width: 768px) and (max-width: 991px)";
 $desktop: "(min-width: 992px)";
 
 .main {
 	position: relative;
 	height: 800px;
 	width: 100%;
-	background: url(https://image.ibb.co/hPCREe/Underwater.png) no-repeat center center;
+	background: url('../images/Underwater.png') no-repeat center center;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -102,9 +102,7 @@ $desktop: "(min-width: 992px)";
 	@include clearfix;
 }
 
-
 .main {
-
 	.main_header {
 		display: flex;
 		display: -webkit-flex;
@@ -114,12 +112,10 @@ $desktop: "(min-width: 992px)";
 		width: 1410px;
 		line-height: 25px;
 	}
-
 	.row {
 		width: 1410px;
 		@include clearfix;
 	}
-
 	ul.main_header-logo-left {
 		display: flex;
 		display: -webkit-flex;
@@ -132,7 +128,6 @@ $desktop: "(min-width: 992px)";
 		line-height: 25px;
 		letter-spacing: 1.15px;
 	}
-
 	ul.main_header-logo-right {
 		width: 500px;
 		display: flex-;
@@ -143,21 +138,18 @@ $desktop: "(min-width: 992px)";
 		list-style-type: none;
 		line-height: 25px;
 	}
-
 	.main_header-logo-color {
 		font-weight: 600;
 		font-size: 24px;
 		color: $project-pink;
 		margin-right: 5px;
 	}
-
 	.main_header-logo-right {
 		li {
 			display: flex-;
 			display: -webkit-flex;
 			justify-content: flex-end;
 		}
-
 		li {
 			a {
 				text-decoration: none;
@@ -173,7 +165,6 @@ $desktop: "(min-width: 992px)";
 			}
 		}
 	}
-
 	nav {
 		ul {
 			li {
@@ -184,7 +175,6 @@ $desktop: "(min-width: 992px)";
 			}
 		}
 	}
-
 	nav {
 		ul {
 			li {
@@ -196,7 +186,6 @@ $desktop: "(min-width: 992px)";
 			}
 		}
 	}
-
 	.main_slogan {
 		border: none;
 		position: relative;
@@ -208,8 +197,6 @@ $desktop: "(min-width: 992px)";
 		justify-content: flex-start;
 		align-items: center;
 	}
-
-
 	.main_slogan {
 		h1 {
 			color: #fff;
@@ -223,44 +210,31 @@ $desktop: "(min-width: 992px)";
 			letter-spacing: 1.15px;
 			margin-right: 120px;
 		}
-
 		.main_slogan-strong {
 			font-family: $fonts-principal;
 			font-weight: 600;
 		}
-
 		.rectangle-decorative {
 			border: 1px solid $project-pink;
 			width: 200px;
 			height: 1.4px;
 			margin: 25px 120px 25px 0px;
 		}
-
-
 		p {
 			color: #fff;
 			text-align: center;
 			font-family: $fonts-principal;
 			font-size: 22px;
-			font-weight: 200px;
-			line-height: 3px;
+			font-weight: 200;
+			line-height: 33px;
 			letter-spacing: 1.15px;
 			margin-right: 120px;
 		}
-
-
 		.default-button {
 			margin-top: 45px;
 			margin-right: 120px;
 		}
 	}
-}
-
-
-.about {
-	width: 100%;
-	height: 430px;
-	background-color: #fff;
 }
 
 .rectangle-gradient {
@@ -273,108 +247,88 @@ $desktop: "(min-width: 992px)";
 	z-index: -1;
 }
 
+.about {
+	width: 100%;
+	height: 430px;
+	background-color: #fff;
+}
 .row {
 	@include clearfix;
 }
-
 [class*="col-"] {
 	float: left;
 	min-height: 1px;
 	box-sizing: border-box;
 }
-
 .col-1 {
 	width: 8.33%;
 }
-
 .col-2 {
 	width: 16.66%;
 }
-
 .col-3 {
 	width: 25%;
 }
-
 .col-4 {
 	width: 33.33%;
 }
-
 .col-5 {
 	width: 41.66%;
 }
-
 .col-6 {
 	width: 50%;
 }
-
 .col-7 {
 	width: 58.33%;
 }
-
 .col-8 {
 	width: 66.66%;
 }
-
 .col-9 {
 	width: 75%;
 }
-
 .col-10 {
 	width: 83.33%;
 }
-
 .col-11 {
 	width: 91.66%;
 }
-
 .col-12 {
 	width: 100%
 }
-
 .col-offset-0 {
 	margin-left: 0%;
 }
-
 .col-offset-1 {
 	margin-left: 8.33%;
 }
-
 .col-offset-2 {
 	margin-left: 16.66%;
 }
-
 .col-offset-3 {
 	margin-left: 25%;
 }
-
 .col-offset-4 {
 	margin-left: 33.33%;
 }
-
 .col-offset-5 {
 	margin-left: 41.66%;
 }
-
 .col-offset-6 {
 	margin-left: 50%;
 }
-
 .col-offset-7 {
 	margin-left: 58.33%;
 }
-
 .col-offset-8 {
 	margin-left: 66.66%;
 }
-
 .col-offset-9 {
 	margin-left: 75%;
 }
-
 .col-offset-10 {
 	margin-left: 83.33%;
 }
-
 .col-offset-11 {
 	margin-left: 91.66%;
 }
@@ -384,32 +338,26 @@ $desktop: "(min-width: 992px)";
 		color: $website-grey;
 		text-align: left;
 	}
-
 	.col-lg-3 {
 		padding-right: 15px;
 	}
-
 	.rectangle-decorative {
 		margin: 25px 0;
 	}
-
 	p {
 	    color: $website-grey;
 	 }
-
 	.about_video {
 		.col-lg-3 {
 			padding-right: 0;
 		}
 	}
-
 	.about_video {
 		h3 {
 		    color: $project-pink;
 		    text-align: left;
 		}
 	}
-
 	.about_video-button {
 		width: 30px;
 		height: 30px;
@@ -420,7 +368,6 @@ $desktop: "(min-width: 992px)";
 		display: flex;
 		justify-content: flex-start;
 	}
-
 	.button-play {
 		box-sizing: border-box;
 		height: 6px;
@@ -430,7 +377,6 @@ $desktop: "(min-width: 992px)";
 		border-color: #fff  #fff #fff $project-pink;
 		margin: 0 auto;
 	}
-
 	.about_video {
 		display: inline;
 	}
@@ -440,7 +386,6 @@ $desktop: "(min-width: 992px)";
 	width: 100%;
 	height: 400px;
 }
-
 .services {
 	.services_description  {
 		width: 100%;
@@ -451,19 +396,15 @@ $desktop: "(min-width: 992px)";
 			flex-direction: column;
 			-webkit-flex-direction: column;
 		}
-
-
 	.services_description {
 		h2 {
 			text-align: center;
 			text-transform: capitalize;
 		}
 	}
-
 	.rectangle-decorative {
 		margin: 22px 0;
 	}
-
 	.services_description-paragraph {
 	   	 text-align: center;
 	}
@@ -471,7 +412,6 @@ $desktop: "(min-width: 992px)";
 		width: 1168px;
 		margin: 0 auto;
 	}
-
 	div.services_icons {
 		display: flex;
 		display: -webkit-flex;
@@ -493,7 +433,6 @@ $desktop: "(min-width: 992px)";
 		    text-align: center;
 		}
 	}
-
 	.services_icons-image {
 		display: flex;
 		display: -webkit-flex;
@@ -511,7 +450,7 @@ $desktop: "(min-width: 992px)";
 	position: relative;
 	height: 501px;
 	width: 100%;
-	background: url(https://image.ibb.co/bGomfK/Underwater_1.png) no-repeat center center;
+	background: url('../images/Underwater_1.png') no-repeat center center;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -525,7 +464,6 @@ $desktop: "(min-width: 992px)";
 	justify-content: center;
 	align-items: center;
 }
-
 .quotes {
 	.quotes_content {
 		width: 1216px;
@@ -536,20 +474,17 @@ $desktop: "(min-width: 992px)";
 		-webkit-flex-direction: column;
 		flex-direction: column;
 	}
-
 	.quotes_content-title {
 		color: $project-pink;
 		.fas {
 			font-size: 55px;
 		}
 	}
-
 	.quotes_content {
 		[class*="col-"]{
 			height: 111px;
 		}
 	}
-
 	.quotes_content-paragraph {
 		color: #ffffff;
 		font-family: $fonts-principal;
@@ -560,7 +495,6 @@ $desktop: "(min-width: 992px)";
 		letter-spacing: 0.63px;
 		text-align: center;
 	}
-
 	.quotes_content-arrows_1 {
 		display: flex;
 		display: -webkit-flex;
@@ -568,12 +502,10 @@ $desktop: "(min-width: 992px)";
 		align-items: center;
 		margin: auto;
 	}
-
-	.quotes_content-arrows_2 {
+.quotes_content-arrows_2 {
 		@extend .quotes_content-arrows_1;
 		justify-content: flex-end;
 	}
-
 	.quotes_content-arrows-left {
 		box-sizing: border-box;
 		width: 20px;
@@ -584,13 +516,11 @@ $desktop: "(min-width: 992px)";
 		transform: rotate(45deg);
 		border-color: transparent transparent #fff #fff;
 	}
-
 	.quotes_content-arrows-right {
 		@extend .quotes_content-arrows-left;
 		border-color: #fff #fff transparent transparent;
 	}
 }
-
 
 .prices {
 	width: 100%;
@@ -598,7 +528,6 @@ $desktop: "(min-width: 992px)";
 	//border: 2px solid black;
 	background-color: #f4f4f4;
 }
-
 .prices {
 	.prices_description  {
 		width: 100%;
@@ -611,25 +540,21 @@ $desktop: "(min-width: 992px)";
 		-webkit-flex-direction: column;
 		margin-bottom: 120px;
 	}
-
 	.prices_description h2 {
 
 		text-align: center;
 		text-transform: capitalize;
 		margin-top: 150px;
 	}
-
 	.rectangle-decorative {
 		margin: 22px 0 22px 10px;
 	}
-
 	.prices_description {
 		p {
 			text-align: center;
 			margin: 0 22vw;
 		}
 	}
-
 	 .prices_details {
 		display: flex;
 		display: -webkit-flex;
@@ -637,7 +562,6 @@ $desktop: "(min-width: 992px)";
 		align-items: center;
 		width: 1138px;
 	}
-
 	.col-3 {
 		height: 311px;
 		display: flex;
@@ -656,19 +580,15 @@ $desktop: "(min-width: 992px)";
 		-webkit-flex-direction: column;
 		background-color: #fff;
 	}
-
 	.prices_business {
 		@extend .prices_standard;
 	}
-
 	.prices_premium {
 		@extend .prices_standard;
 	}
-
 	.prices_unlimited {
 		@extend .prices_standard;
 	}
-
 	.prices_standard-title {
 		margin: 30px 0 0 0;
 		font-family: $fonts-principal;
@@ -678,7 +598,6 @@ $desktop: "(min-width: 992px)";
 		letter-spacing: 0.5px;
 		text-align: center;
 	}
-
 	.prices_business {
 		h4 {
 			@extend .prices_standard-title;
@@ -694,11 +613,9 @@ $desktop: "(min-width: 992px)";
 			@extend .prices_standard-title;
 		}
 	}
-
 	.prices_standard-title-big {
 		font-size: 50px;
 	}
-
 	.prices_standard-heading {
 		margin: 0 0 10px 0;
 		color: #f4f4f4;
@@ -709,7 +626,6 @@ $desktop: "(min-width: 992px)";
 		letter-spacing: 0.38px;
 		text-align: center;
 	}
-
 	.prices_business {
 		h5 {
 			@extend .prices_standard-heading;
@@ -734,7 +650,6 @@ $desktop: "(min-width: 992px)";
 		letter-spacing: 0.38px;
 		text-align: center;
 	}
-
 	.prices_business {
 		p {
 			@extend .prices_standard-paragraph;
@@ -750,12 +665,10 @@ $desktop: "(min-width: 992px)";
 			@extend .prices_standard-paragraph;
 		}
 	}
-
 	.default-button  {
 		margin: 0 auto;
 		position: relative;
 	}
-
 	.prices-button {
 		position: relative;
 		top: -25px;
@@ -772,7 +685,6 @@ $desktop: "(min-width: 992px)";
 		font-weight: 700;
 		border-radius: 25px;
 	}
-
 	.prices_standard-top {
 		width: 100%;
 		height: 150px;
@@ -797,7 +709,6 @@ $desktop: "(min-width: 992px)";
 			background-color: #fff;
 		}
 	}
-
 	.prices_business-top {
 		@extend .prices_standard-top;
 		background-color: $project-pink;
@@ -808,22 +719,19 @@ $desktop: "(min-width: 992px)";
 	.prices_unlimited-top{
 		@extend .prices_standard-top;
 	}
-
 	.row {
 		display: flex;
 		display: -webkit-flex;
 		justify-content: center;
 		align-items: center;
 	}
-
-	.col-3 {
+	.col-lg-3 {
 		display: flex;
 		display: -webkit-flex;
 		justify-content: space-between;
 		align-items: center;
 	}
 }
-
 
 .description {
 	display: flex;
@@ -835,24 +743,20 @@ $desktop: "(min-width: 992px)";
 	margin-top: 120px;
 	margin-bottom: 120px;
 }
-
 .description {
 	.description_table {
 		width: 1138px;
 		margin-right: 50px;
 	}
-
 	h3 {
 		color: $project-pink;
     	text-align: left;
     	padding-right: 5px;
 	}
-
 	p {
 	    text-align: left;
 	    padding: 0 5px;
 	}
-
 	.description_icons {
 		display: flex;
 		display: -webkit-flex;
@@ -873,7 +777,6 @@ $desktop: "(min-width: 992px)";
 	align-items: center;
 	background-color: $project-pink;
 }
-
 .rectangle {
 	.rectangle_table {
 		width: 1138px;
@@ -888,12 +791,10 @@ $desktop: "(min-width: 992px)";
 			letter-spacing: 1.15px;
 		}
 	}
-
 	.rectangle_table-strong {
 		font-family: $fonts-principal;
 		font-weight: 600;
 	}
-
 	.rectangle_table button {
 		background-color: #fff;
 		color: $project-pink;
@@ -908,14 +809,12 @@ $desktop: "(min-width: 992px)";
 		border-radius: 15px;
 		margin-left: 5px;
 	}
-
 	.row {
 		display: flex;
 		display: -webkit-flex;
 		justify-content: center;
 		align-items: center;
 	}
-
 	.col-lg-3 {
 		float: none;
 		display: flex;
@@ -924,7 +823,6 @@ $desktop: "(min-width: 992px)";
 		align-items: center;
 	}
 }
-
 
 	.updates {
 		width: 100%;
@@ -935,7 +833,6 @@ $desktop: "(min-width: 992px)";
 		align-items: center;
 			flex-direction: column;
 	}
-
 	.updates {
 		div {
 			.updates_description {
@@ -947,7 +844,6 @@ $desktop: "(min-width: 992px)";
 				margin-bottom: 75px;
 			}
 		}
-
 		.updates_description {
 			h2 {
 				color: $website-grey;
@@ -956,17 +852,14 @@ $desktop: "(min-width: 992px)";
 				margin-top: 60px;
 			}
 		}
-
 		.rectangle-decorative {
 			margin: 22px 0 22px 10px;
 		}
-
 		.udpates_description {
 			p {
 	    		text-align: center;
 			}
 		}
-
 		.updates_gallery {
 			width: 1138px;
 			display: flex;
@@ -976,7 +869,6 @@ $desktop: "(min-width: 992px)";
 			background-color: #fff;
 			margin-left: 15px;
 		}
-
 		.updates_gallery {
 			[class*="col-"]{
 				display: flex;
@@ -986,7 +878,6 @@ $desktop: "(min-width: 992px)";
 				flex-direction: column;
 			}
 		}
-
 		.updates_gallery {
 			img {
 				position: relative;
@@ -997,7 +888,6 @@ $desktop: "(min-width: 992px)";
 				transition: 1.5s linear;
 			}
 		}
-
 		.updates_gallery-layer {
 			position: absolute;
 			transform: rotate(1deg) translate(-2px, -7px);
@@ -1017,13 +907,11 @@ $desktop: "(min-width: 992px)";
 			cursor: pointer;
 			transition: 1.5s linear;
 		}
-
 		.updates_gallery-layer {
 			i.fa {
 				font-size:30px;
 			}
 		}
-
 		.updates_gallery-image {
 			&:hover {
 				.updates_gallery-layer {
@@ -1031,7 +919,6 @@ $desktop: "(min-width: 992px)";
 				}
 			}
 		}
-
 		.updates_gallery-text {
 			box-sizing: border-box;
 			position: relative;
@@ -1039,7 +926,6 @@ $desktop: "(min-width: 992px)";
 			width: 100%;
 			height: 250px;
 			background-color: #fff;
-
 			.updates_gallery-text-group {
 				width: 360px;
 				height: 150px;
@@ -1050,7 +936,6 @@ $desktop: "(min-width: 992px)";
 				margin-left: 10px;
 			}
 		}
-
 		.updates_gallery-text {
 			h3 {
 				color: $website-grey;
@@ -1058,7 +943,6 @@ $desktop: "(min-width: 992px)";
 			    padding: 15px 15px 0 15px;
 			}
 		}
-
 		.updates_gallery-text  {
 			p {
 				color: $website-grey;
@@ -1066,7 +950,6 @@ $desktop: "(min-width: 992px)";
 			    padding: 0 15px 15px 15px;;
 			}
 		}
-
 		.updates_more {
 			display: flex;
 			flex-direction: column;
@@ -1074,7 +957,6 @@ $desktop: "(min-width: 992px)";
 			justify-content: center;
 			margin-bottom: 50px;
 		}
-
 		.updates_more {
 			h3 {
 				box-sizing: border-box;
@@ -1083,7 +965,6 @@ $desktop: "(min-width: 992px)";
 				margin: 0;
 			}
 		}
-
 		.updates_more-button {
 			border: none;
 			display: flex;
@@ -1092,7 +973,6 @@ $desktop: "(min-width: 992px)";
 			background-color: #fff;
 			margin: 0;
 		}
-
 		.updates_more-button {
 			span {
 				box-sizing: border-box;
@@ -1110,7 +990,7 @@ $desktop: "(min-width: 992px)";
 	.show {
 		width: 100%;
 		height: 650px;
-		background: url(https://image.ibb.co/c5rd4p/Underwater_3.png) no-repeat center center;
+		background: url('../images/Underwater_3.png') no-repeat center center;
 		-webkit-background-size: cover;
 	  	-moz-background-size: cover;
 	  	-o-background-size: cover;
@@ -1124,9 +1004,7 @@ $desktop: "(min-width: 992px)";
 		justify-content: center;
 		align-items: center;
 	}
-
 	.show {
-
 		.show_content {
 			width: 33.33%;
 			display: flex;
@@ -1136,7 +1014,6 @@ $desktop: "(min-width: 992px)";
 			flex-direction: column;
 			-webkit-flex-direction: column;
 			}
-
 		.show_content-title {
 			h2 {
 				color: #fff;
@@ -1144,7 +1021,6 @@ $desktop: "(min-width: 992px)";
 				text-transform: capitalize;
 			}
 		}
-
 		.rectangle-decorative{
 			margin: 22px 0 22px 10px;
 		}
@@ -1152,7 +1028,6 @@ $desktop: "(min-width: 992px)";
 		.show_content-paragraph {
 			margin-bottom: 50px;
 		}
-
 		.show_content-paragraph {
 			p {
 				color: #fff;
@@ -1160,23 +1035,19 @@ $desktop: "(min-width: 992px)";
 
 			}
 		}
-
 		.show_content-button {
 			margin-top: 50px;
 		}
-
 	}
 
 	.download {
 		width: 100%;
 		height: 754px;
 	}
-
 	.download {
 		.row {
 			@include clearfix;
 		}
-
 		.download_image {
 			display: flex;
 			flex-direction: column;
@@ -1189,13 +1060,11 @@ $desktop: "(min-width: 992px)";
 			width: 800px;
 			float: right;
 		}
-
 		.download_image
 			img {
 				object-fit:cover;
 				margin: 80px 0 0 60px;
 			}
-
 		.download_content {
 			display: flex;
 			flex-direction: column;
@@ -1203,19 +1072,15 @@ $desktop: "(min-width: 992px)";
 			margin-top: 102.5px;
 			width: 538px;
 		}
-
 		.download_content-title {
 			margin-left: 50px;
 		}
-
 		.download_content-rectangle {
 			width: 100%;
 		}
-
 		.rectangle-decorative {
 			margin: 22px 20px 22px 50px;
 		}
-
 		.download_content-paragraph{
 			margin-bottom: 25px;
 			margin-left: 50px;
@@ -1223,7 +1088,6 @@ $desktop: "(min-width: 992px)";
 				line-height: 33px;
 			}
 		}
-
 		.download_content-button {
 			margin-top: 15px;
 			margin-left: 50px;
@@ -1238,31 +1102,27 @@ $desktop: "(min-width: 992px)";
 		color: #fff;
 		display: flex;
 		align-items: center;
-
 	}
-
 	.footer {
 		.row {
 			width: 100%;
 		}
-
 		.footer_copyright {
 			display: flex;
 			align-items: center;
 			justify-content: center;
 		}
-
 		.footer_design {
 			display: flex;
 			align-items: center;
 			justify-content: center;
 		}
-
 		.footer_design-special {
 			color: $project-pink;
 			font-size: 24px;
 			}
 	}
+
 @media #{$phone} {
     /* For phones: */
 
@@ -1297,186 +1157,84 @@ $desktop: "(min-width: 992px)";
 
 		.main {
 			.main_header {
-				display: flex;
-				display: -webkit-flex;
-				align-items: center;
-				border: none;
-				margin: 0 auto;
 				width: 100vw;
 				line-height: 5vh;
 			}
-
 			.row {
 				width: 100vw;
 				@include clearfix;
 			}
-
 			ul.main_header-logo-left {
-				display: flex;
-				display: -webkit-flex;
 				justify-content: center;
-				font-weight: 600;
 				font-size: 5vh;
-				color: #ffffff;
-				line-height: 12.28px;
-				font-family: 'Raleway - Black', sans-serif;
 				line-height: 5vh;
 				letter-spacing: 1.15px;
 				padding: 1vh 0;
 			}
-
 			ul.main_header-logo-right {
 				width: auto;
-				display: flex;
 				justify-content: center;
 				margin: 0 2.5px;
 				padding: 1vh 0;
-				list-style-type: none;
 				line-height: 3.5vh;
 			}
-
 			.main_header-logo-color {
-				font-weight: 600;
-				font-size: 24px;
-				color: $project-pink;
-				margin-right: 5px;
+				font-size: 5vh;
 			}
-
 			.main_header-logo-right {
 				li {
-					display: flex;
-					display: -webkit-flex;
-					justify-content: flex-end;
-				}
-
-				li {
 					a {
-						text-decoration: none;
-						color: #ffffff;
-						text-transform: capitalize;
 						font-size: 3.5vh;
-						line-height: 25px;
-						font-weight: 700;
-						font-family: $fonts-principal;
-						font-style: bold;
-						cursor: pointer;
-						padding: 0 7px;
+						line-height: 4vh;
 					}
 				}
 			}
-
-			nav {
-				ul {
-					li {
-						display: flex;
-						text-decoration: none;
-						list-style-type: none;
-					}
-				}
-			}
-
-			nav {
-				ul {
-					li {
-						a {
-						   	&:hover {
-							color: $project-pink;
-							}
-						}
-					}
-				}
-			}
-
 			.main_slogan {
-				border: none;
-				position: relative;
 				margin: 3vh auto;
 				width: 100vw;
-				display: flex;
-				display: -webkit-flex;
-				flex-direction: column;
-				justify-content: flex-start;
-				align-items: center;
 			}
-
-
 			.main_slogan {
 				h1 {
-					color: #fff;
-					text-transform: uppercase;
 					font-size: 8vh;
 					text-align: center;
-					font-weight: 100;
-					text-align: center;
 					line-height: 7.5vh;
-					font-family: 'Lato', sans-serif;
-					letter-spacing: 1.15px;
 					margin: 3vh auto;
 				}
-
-				.main_slogan-strong {
-					font-family: $fonts-principal;
-					font-weight: 600;
-				}
-
 				.rectangle-decorative {
-					border: 1px solid $project-pink;
-					width: 200px;
-					height: 1.4px;
 					margin: 5vh 0px;
 				}
-
 				p {
-					color: #fff;
-					text-align: center;
-					font-family: $fonts-principal;
 					font-size: 3vh;
-					font-weight: 200;
 					line-height: 3vh;
-					letter-spacing: 1.15px;
 					margin: 0 auto;
 					width: 90vw;
 				}
-
 				.default-button {
 					margin: 4vh auto;
 				}
 			}
 		}
 
-		.about {
-			width: 100%;
-			height: auto;
-			background-color: #fff;
-		}
-
 		.rectangle-gradient {
-			position: relative;
-			bottom: 3px;
 			width: 97.1%;
-			height: 26px;
-			background-color: $project-pink;
-			transform: rotate(-0.7deg) scale(1.1) translate(0, -10px);
-			z-index: -1;
 		}
 
+		.about {
+			height: auto;
+		}
 		.row {
 			@include clearfix;
 		}
-
 		.about {
 			h2 {
 				text-align: center;
 			}
-
 			.col-sm-3 {
 				padding-right: 15px;
 			}
-
 			.rectangle-decorative {
 				margin: 25px auto;
 			}
-
 			p {
 					text-align: center;
 					padding: 0 10px;
@@ -1497,50 +1255,19 @@ $desktop: "(min-width: 992px)";
 		}
 
 		.services {
-			width: 100%;
 			height: auto;
 		}
 
 		.services {
-			.services_description  {
-				width: 100%;
-					display: flex;
-					display: -webkit-flex;
-					justify-content: center;
-					align-items: center;
-					flex-direction: column;
-					-webkit-flex-direction: column;
-				}
-
-
-			.services_description {
-				h2 {
-					text-align: center;
-					text-transform: capitalize;
-				}
-			}
-
-			.rectangle-decorative {
-				margin: 22px 0;
-			}
-
 			.services_description-paragraph {
-			   	 text-align: center;
 					 padding: 0 10px;
 			}
 			.container {
 				width: 100vw;
-				margin: 0 auto;
 			}
-
 			div.services_icons {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				flex-direction: column;
 				margin: 33px auto 0 auto;
 			}
-
 		}
 
 		.quotes {
@@ -1562,7 +1289,6 @@ $desktop: "(min-width: 992px)";
 			justify-content: center;
 			align-items: center;
 		}
-
 		.quotes {
 			.quotes_content {
 				width: 90vw;
@@ -1573,26 +1299,22 @@ $desktop: "(min-width: 992px)";
 					align-items: center;
 				}
 			}
-
 			.quotes_content-title {
-				color: $project-pink;
 				.fas {
-					font-size: 55px;
+					font-size: 33px;
 				}
 			}
-
 			.quotes_content {
 				[class*="col-sm"]{
 					height: 111px;
 				}
 			}
-
 			.quotes_content-paragraph {
 				font-size: 3vh;
 				line-height:2.5vh;
-				letter-spacing: 0.63px;
 			}
 		}
+
 		.prices {
 			width: auto;
 			height: auto;
@@ -1604,7 +1326,6 @@ $desktop: "(min-width: 992px)";
 						margin-top: 10vh;
 					}
 				}
-
  				.prices_details {
 					width: 100vw;
 					display: flex;
@@ -1618,34 +1339,24 @@ $desktop: "(min-width: 992px)";
 					}
 				}
 		}
-		.rectangle-decorative {
-			margin: 22px 0;
-		}
+
 		.description {
-			display: flex;
 			justify-content: center;
-			align-items: center;
 			width: 100vw;
 			height: auto;
 			margin: 0 auto;
 		}
-
 		.description {
 			.description_table {
 				width: 100vw;
 				margin: 0 auto;
 			}
 		}
+
 		.rectangle {
 			width: 100%;
 			height: auto;
-			display: flex;
-			display: -webkit-flex;
-			justify-content: center;
-			align-items: center;
-			background-color: $project-pink;
 		}
-
 		.rectangle {
 			.rectangle_table {
 				width: 100vw;
@@ -1658,16 +1369,15 @@ $desktop: "(min-width: 992px)";
 					margin: 0 auto;
 				}
 			}
-
-			.rectangle_table button {
-				margin: 25px auto 0 auto;
+			.rectangle_table {
+				button {
+					margin: 25px auto 0 auto;
+				}
 			}
-
 			.row {
 				display: flex;
 				flex-direction: column;
 			}
-
 			.col-sm-12 {
 				float: none;
 				display: flex;
@@ -1675,13 +1385,14 @@ $desktop: "(min-width: 992px)";
 				align-items: center;
 			}
 		}
+
  .updates {
 	 width: 100vw;
 	 height: auto;
 	 .updates_description {
 		 padding: 0 10px;
 		 text-align: center;
-		 	margin-bottom: 25px;
+		 margin-bottom: 25px;
 	 }
 	 .updates_gallery {
 		 width: 100vw;
@@ -1692,23 +1403,20 @@ $desktop: "(min-width: 992px)";
 				 img {
 					 max-width: 360px;
 					 width: 95vw;
-					 height: 250px;
 				 }
 			 }
 			 .updates_gallery-layer {
 					 width: 95vw;
 					 max-width: 360px;
-					 height: 250px;
 			 }
 			 .updates_gallery-text {
 					 width: 97vw;
 					 max-width: 370px;
-					 height: 250px;
 					 .updates_gallery-text-group {
 						width: 95vw;
-						max-width: 365px;
-						height: 250px;
+						max-width: 360px;
 						justify-content: flex-start;
+						margin-left: 5px;
 					}
 					h3 {
 							text-align: center;
@@ -1749,7 +1457,6 @@ $desktop: "(min-width: 992px)";
 	 }
  }
  .download {
-	 width: 100%;
 	 height: auto;
  }
 
@@ -1757,34 +1464,24 @@ $desktop: "(min-width: 992px)";
 	 .row {
 		 @include clearfix;
 	 }
-
 	 .download_image {
-		 display: flex;
-		 flex-direction: column;
 		 align-items: center;
 		 justify-content: center;
 		 margin: auto;
 		 height: auto;
 		 width: 100vw;
 	 }
-
 	 .download_image
 		 img {
 			object-fit:cover;
-			 width: 90%;
-			 height: 90%;
-			 margin: 40px auto 10px auto;
+			width: 90%;
+			height: 90%;
+			margin: 40px auto 10px auto;
 		 }
-
 	 .download_content {
-		 display: flex;
-		 flex-direction: column;
-		 justify-content: flex-start;
-		 align-items: flex-start;
 		 margin: 0 auto;
 		 width: auto;
 	 }
-
 	 .download_content-title {
 		 margin-left: 0;
 		 h2 {
@@ -1792,35 +1489,31 @@ $desktop: "(min-width: 992px)";
 			 text-align: center;
 		 }
 	 }
-
 	 .download_content-rectangle {
 		 width: 100%;
 	 }
-
 	 .rectangle-decorative {
 		 margin: 22px auto;
 	 }
-
 	 .download_content-paragraph{
 		 margin: 0 auto 25px auto;
 		 p {
-			 line-height: 33px;
 			 text-align: center;
 			 padding: 0 10px;
 		 }
 	 }
-
 	 .download_content-button {
-		 width: 100%;
+		 margin: 0 auto 50px auto;
+		 display: flex;
+		 justify-content: center;
 		 default-button {
 			 margin: 0 auto 25px auto;
 		 }
-		 margin-bottom: 50px;
 	 }
  }
+
  .footer {
 	 height: auto;
-	 width: 100%;
 	 .footer_copyright {
 		 margin-top: 25px;
 	 }
@@ -1828,6 +1521,128 @@ $desktop: "(min-width: 992px)";
 		 margin-bottom: 25px;
 	 }
  }
+}
+
+@media #{$tablet} {
+		/*For tablet */
+		.col-md-1 {width: 8.33%;}
+		.col-md-2 {width: 16.66%;}
+		.col-md-3 {width: 25%;}
+		.col-md-4 {width: 33.33%;}
+		.col-md-5 {width: 41.66%;}
+		.col-md-6 {width: 50%;}
+		.col-md-7 {width: 58.33%;}
+		.col-md-8 {width: 66.66%;}
+		.col-md-9 {width: 75%;}
+		.col-md-10 {width: 83.33%;}
+		.col-md-11 {width: 91.66%;}
+		.col-md-12 {width: 100%;}
+
+		.main {
+			position: relative;
+			height: auto;
+			width: 100vw;
+			background: url('../images/underwater.png') no-repeat center center;
+			-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: 0% 100%;
+			overflow: hidden;
+			resize: both;
+			@include clearfix;
+		}
+		.main {
+				.row {
+					width: 100vw;
+					@include clearfix;
+				}
+				.main_header {
+					width: 100vw;
+					.main_header-logo-left {
+						width: auto;
+					}
+					.main_header-logo-right {
+						width: auto;
+					}
+				}
+				.main_slogan {
+					width: 90vw;
+					height: auto;
+					margin: 20px auto 10px auto;
+					justify-content: center;
+					align-items: center;
+					h1 {
+						margin: 0 auto;
+						font-size: 46px;
+						line-height: 40px;
+					}
+					.rectangle-decorative {
+						margin: 22px auto;
+					}
+					p {
+						width: auto;
+						height: auto;
+						line-height: 33px;
+						margin: 10px auto;
+					}
+					.default-button {
+						margin: 25px auto;
+					}
+				}
+		}
+
+		.about {
+			height: auto;
+		}
+		.about {
+			.col-md-12 {
+				text-align: center;
+			}
+			.about-title {
+				display: flex;
+				justify-content: center;
+				h2 {
+					text-align: center;
+					padding: 0 15px;
+					margin-left: none;
+				}
+			}
+			p {
+				padding: 0 15px;
+			}
+			.rectangle-decorative {
+				margin: 22px auto;
+			}
+			.about_video {
+				h3 {
+					text-align: center;
+				}
+				div {
+					.about_video-button {
+						margin: 0 auto 25px auto;
+					}
+				}
+			}
+			.about_image {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				img {
+					width: auto;
+					height: auto;
+				}
+			}
+		}
+
+		.services {
+			height: auto;
+		}
+		.services {
+			.container {
+				width: 100%;
+			}
+		}
 }
 
 @media #{$desktop} {
