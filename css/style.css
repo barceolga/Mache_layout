@@ -63,7 +63,7 @@ body * {
   position: relative;
   height: 800px;
   width: 100%;
-  background: url(https://image.ibb.co/hPCREe/Underwater.png) no-repeat center center;
+  background: url("../images/Underwater.png") no-repeat center center;
   background-size: cover;
   background-position: 0% 100%;
   overflow: hidden;
@@ -209,8 +209,8 @@ body * {
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 22px;
-  font-weight: 200px;
-  line-height: 3px;
+  font-weight: 200;
+  line-height: 33px;
   letter-spacing: 1.15px;
   margin-right: 120px;
 }
@@ -218,12 +218,6 @@ body * {
 .main .main_slogan .default-button {
   margin-top: 45px;
   margin-right: 120px;
-}
-
-.about {
-  width: 100%;
-  height: 430px;
-  background-color: #fff;
 }
 
 .rectangle-gradient {
@@ -234,6 +228,12 @@ body * {
   background-color: #ed145b;
   transform: rotate(-0.7deg) scale(1.1) translate(0, -10px);
   z-index: -1;
+}
+
+.about {
+  width: 100%;
+  height: 430px;
+  background-color: #fff;
 }
 
 .row:after {
@@ -476,7 +476,7 @@ body * {
   position: relative;
   height: 501px;
   width: 100%;
-  background: url(https://image.ibb.co/bGomfK/Underwater_1.png) no-repeat center center;
+  background: url("../images/Underwater_1.png") no-repeat center center;
   background-size: cover;
   background-position: 0% 60%;
   overflow: hidden;
@@ -735,7 +735,7 @@ body * {
       align-items: center;
 }
 
-.prices .col-3 {
+.prices .col-lg-3 {
   display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
@@ -1043,7 +1043,7 @@ body * {
 .show {
   width: 100%;
   height: 650px;
-  background: url(https://image.ibb.co/c5rd4p/Underwater_3.png) no-repeat center center;
+  background: url("../images/Underwater_3.png") no-repeat center center;
   background-size: cover;
   background-position: 0% 60%;
   overflow: hidden;
@@ -1258,13 +1258,6 @@ body * {
     clear: both;
   }
   .main .main_header {
-    display: -ms-flexbox;
-    display: flex;
-    display: -webkit-flex;
-    -ms-flex-align: center;
-        align-items: center;
-    border: none;
-    margin: 0 auto;
     width: 100vw;
     line-height: 5vh;
   }
@@ -1277,129 +1270,55 @@ body * {
     clear: both;
   }
   .main ul.main_header-logo-left {
-    display: -ms-flexbox;
-    display: flex;
-    display: -webkit-flex;
     -ms-flex-pack: center;
         justify-content: center;
-    font-weight: 600;
     font-size: 5vh;
-    color: #ffffff;
-    line-height: 12.28px;
-    font-family: 'Raleway - Black', sans-serif;
     line-height: 5vh;
     letter-spacing: 1.15px;
     padding: 1vh 0;
   }
   .main ul.main_header-logo-right {
     width: auto;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-pack: center;
         justify-content: center;
     margin: 0 2.5px;
     padding: 1vh 0;
-    list-style-type: none;
     line-height: 3.5vh;
   }
   .main .main_header-logo-color {
-    font-weight: 600;
-    font-size: 24px;
-    color: #ed145b;
-    margin-right: 5px;
-  }
-  .main .main_header-logo-right li {
-    display: -ms-flexbox;
-    display: flex;
-    display: -webkit-flex;
-    -ms-flex-pack: end;
-        justify-content: flex-end;
+    font-size: 5vh;
   }
   .main .main_header-logo-right li a {
-    text-decoration: none;
-    color: #ffffff;
-    text-transform: capitalize;
     font-size: 3.5vh;
-    line-height: 25px;
-    font-weight: 700;
-    font-family: "Lato", sans-serif;
-    font-style: bold;
-    cursor: pointer;
-    padding: 0 7px;
-  }
-  .main nav ul li {
-    display: -ms-flexbox;
-    display: flex;
-    text-decoration: none;
-    list-style-type: none;
-  }
-  .main nav ul li a:hover {
-    color: #ed145b;
+    line-height: 4vh;
   }
   .main .main_slogan {
-    border: none;
-    position: relative;
     margin: 3vh auto;
     width: 100vw;
-    display: -ms-flexbox;
-    display: flex;
-    display: -webkit-flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
-    -ms-flex-align: center;
-        align-items: center;
   }
   .main .main_slogan h1 {
-    color: #fff;
-    text-transform: uppercase;
     font-size: 8vh;
     text-align: center;
-    font-weight: 100;
-    text-align: center;
     line-height: 7.5vh;
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 1.15px;
     margin: 3vh auto;
   }
-  .main .main_slogan .main_slogan-strong {
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
-  }
   .main .main_slogan .rectangle-decorative {
-    border: 1px solid #ed145b;
-    width: 200px;
-    height: 1.4px;
     margin: 5vh 0px;
   }
   .main .main_slogan p {
-    color: #fff;
-    text-align: center;
-    font-family: "Lato", sans-serif;
     font-size: 3vh;
-    font-weight: 200;
     line-height: 3vh;
-    letter-spacing: 1.15px;
     margin: 0 auto;
     width: 90vw;
   }
   .main .main_slogan .default-button {
     margin: 4vh auto;
   }
-  .about {
-    width: 100%;
-    height: auto;
-    background-color: #fff;
-  }
   .rectangle-gradient {
-    position: relative;
-    bottom: 3px;
     width: 97.1%;
-    height: 26px;
-    background-color: #ed145b;
-    transform: rotate(-0.7deg) scale(1.1) translate(0, -10px);
-    z-index: -1;
+  }
+  .about {
+    height: auto;
   }
   .row:after {
     content: "";
@@ -1433,45 +1352,15 @@ body * {
     height: auto;
   }
   .services {
-    width: 100%;
     height: auto;
   }
-  .services .services_description {
-    width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    display: -webkit-flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-direction: column;
-        flex-direction: column;
-  }
-  .services .services_description h2 {
-    text-align: center;
-    text-transform: capitalize;
-  }
-  .services .rectangle-decorative {
-    margin: 22px 0;
-  }
   .services .services_description-paragraph {
-    text-align: center;
     padding: 0 10px;
   }
   .services .container {
     width: 100vw;
-    margin: 0 auto;
   }
   .services div.services_icons {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-direction: column;
-        flex-direction: column;
     margin: 33px auto 0 auto;
   }
   .quotes {
@@ -1504,11 +1393,8 @@ body * {
     -ms-flex-align: center;
         align-items: center;
   }
-  .quotes .quotes_content-title {
-    color: #ed145b;
-  }
   .quotes .quotes_content-title .fas {
-    font-size: 55px;
+    font-size: 33px;
   }
   .quotes .quotes_content [class*="col-sm"] {
     height: 111px;
@@ -1516,7 +1402,6 @@ body * {
   .quotes .quotes_content-paragraph {
     font-size: 3vh;
     line-height: 2.5vh;
-    letter-spacing: 0.63px;
   }
   .prices {
     width: auto;
@@ -1547,16 +1432,9 @@ body * {
         justify-content: center;
     margin-bottom: 25px;
   }
-  .rectangle-decorative {
-    margin: 22px 0;
-  }
   .description {
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-pack: center;
         justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
     width: 100vw;
     height: auto;
     margin: 0 auto;
@@ -1568,14 +1446,6 @@ body * {
   .rectangle {
     width: 100%;
     height: auto;
-    display: -ms-flexbox;
-    display: flex;
-    display: -webkit-flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    background-color: #ed145b;
   }
   .rectangle .rectangle_table {
     width: 100vw;
@@ -1625,24 +1495,21 @@ body * {
   .updates .updates_gallery .col-sm-12 .updates_gallery-image img {
     max-width: 360px;
     width: 95vw;
-    height: 250px;
   }
   .updates .updates_gallery .col-sm-12 .updates_gallery-layer {
     width: 95vw;
     max-width: 360px;
-    height: 250px;
   }
   .updates .updates_gallery .col-sm-12 .updates_gallery-text {
     width: 97vw;
     max-width: 370px;
-    height: 250px;
   }
   .updates .updates_gallery .col-sm-12 .updates_gallery-text .updates_gallery-text-group {
     width: 95vw;
-    max-width: 365px;
-    height: 250px;
+    max-width: 360px;
     -ms-flex-pack: start;
         justify-content: flex-start;
+    margin-left: 5px;
   }
   .updates .updates_gallery .col-sm-12 .updates_gallery-text h3 {
     text-align: center;
@@ -1678,7 +1545,6 @@ body * {
     margin-bottom: 50px;
   }
   .download {
-    width: 100%;
     height: auto;
   }
   .download .row:after {
@@ -1687,10 +1553,6 @@ body * {
     clear: both;
   }
   .download .download_image {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
     -ms-flex-pack: center;
@@ -1707,14 +1569,6 @@ body * {
     margin: 40px auto 10px auto;
   }
   .download .download_content {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
-    -ms-flex-align: start;
-        align-items: flex-start;
     margin: 0 auto;
     width: auto;
   }
@@ -1735,26 +1589,172 @@ body * {
     margin: 0 auto 25px auto;
   }
   .download .download_content-paragraph p {
-    line-height: 33px;
     text-align: center;
     padding: 0 10px;
   }
   .download .download_content-button {
-    width: 100%;
-    margin-bottom: 50px;
+    margin: 0 auto 50px auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
   .download .download_content-button default-button {
     margin: 0 auto 25px auto;
   }
   .footer {
     height: auto;
-    width: 100%;
   }
   .footer .footer_copyright {
     margin-top: 25px;
   }
   .footer .footer_design {
     margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /*For tablet */
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .main {
+    position: relative;
+    height: auto;
+    width: 100vw;
+    background: url("../images/underwater.png") no-repeat center center;
+    background-size: cover;
+    background-position: 0% 100%;
+    overflow: hidden;
+    resize: both;
+  }
+  .main:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .main .row {
+    width: 100vw;
+  }
+  .main .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .main .main_header {
+    width: 100vw;
+  }
+  .main .main_header .main_header-logo-left {
+    width: auto;
+  }
+  .main .main_header .main_header-logo-right {
+    width: auto;
+  }
+  .main .main_slogan {
+    width: 90vw;
+    height: auto;
+    margin: 20px auto 10px auto;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .main .main_slogan h1 {
+    margin: 0 auto;
+    font-size: 46px;
+    line-height: 40px;
+  }
+  .main .main_slogan .rectangle-decorative {
+    margin: 22px auto;
+  }
+  .main .main_slogan p {
+    width: auto;
+    height: auto;
+    line-height: 33px;
+    margin: 10px auto;
+  }
+  .main .main_slogan .default-button {
+    margin: 25px auto;
+  }
+  .about {
+    height: auto;
+  }
+  .about .col-md-12 {
+    text-align: center;
+  }
+  .about .about-title {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .about .about-title h2 {
+    text-align: center;
+    padding: 0 15px;
+    margin-left: none;
+  }
+  .about p {
+    padding: 0 15px;
+  }
+  .about .rectangle-decorative {
+    margin: 22px auto;
+  }
+  .about .about_video h3 {
+    text-align: center;
+  }
+  .about .about_video div .about_video-button {
+    margin: 0 auto 25px auto;
+  }
+  .about .about_image {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .about .about_image img {
+    width: auto;
+    height: auto;
+  }
+  .services {
+    height: auto;
+  }
+  .services .container {
+    width: 100%;
   }
 }
 
