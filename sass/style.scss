@@ -763,7 +763,6 @@ $desktop: "(min-width: 992px)";
 		justify-content: center;
 		align-items: center;
 		color: $project-pink;
-		font-size: 40px;
 		margin-top: 15px;
 	}
 }
@@ -1141,7 +1140,7 @@ $desktop: "(min-width: 992px)";
 
 		.main {
 			position: relative;
-			height: 100vh;
+			height: 100%;
 			width: 100vw;
 			background: url('../images/Background/underwater.png') no-repeat center center;
 			-webkit-background-size: cover;
@@ -1541,8 +1540,8 @@ $desktop: "(min-width: 992px)";
 		.main {
 			position: relative;
 			height: auto;
-			width: 100vw;
-			background: url('../images/Background/underwater.png') no-repeat center center;
+			width: 100%;
+			background: url('../images/Background/Underwater.png') no-repeat center center;
 			-webkit-background-size: cover;
 				-moz-background-size: cover;
 				-o-background-size: cover;
@@ -1643,6 +1642,216 @@ $desktop: "(min-width: 992px)";
 				width: 100%;
 			}
 		}
+
+		.quotes {
+			position: relative;
+			height: auto;
+			width: 100%;
+			background: url('../images/Background/Underwater_3.png') no-repeat center center;
+			-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				background-position: 0% 100%;
+			overflow: hidden;
+			resize: both;
+			z-index: 2;
+			display: flex;
+			display: -webkit-flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.quotes{
+			.quotes_content {
+				width: 80vw;
+				.quotes_content-title{
+					width: 100%;
+					.fas {
+						font-size: 33px;
+					}
+				}
+			}
+		}
+
+		.prices {
+			height: auto;
+			.prices_description {
+				margin-bottom: 50px;
+				h2 {
+					margin-top: 50px;
+				}
+				p {
+					margin-bottom: 0px;
+				}
+			}
+			.prices_details {
+				width: 750px;
+				margin-bottom: 50px;
+
+			}
+			.col-md-3 {
+				width: 180px;
+			}
+			.prices-button {
+				width: 150px;
+			}
+			.default-button {
+				width: 150px;
+			}
+		}
+		.description {
+			width: 100%;
+			height: auto;
+			.description_table {
+				margin-bottom: 0;
+				width: 95vw;
+				.description_icons {
+					margin-right: 5px;
+				}
+			}
+		}
+
+		.rectangle {
+			height: auto;
+			.rectangle_table {
+				width: 100%;
+				height: auto;
+				.row {
+					width: 100%;
+					flex-direction: column;
+				}
+				.col-md-12 {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				h1 {
+					text-align: center;
+					line-height: 38px;
+					padding: 0 15px;
+				}
+				button {
+					margin: 0 auto 25px auto;
+				}
+			}
+		}
+
+		.updates {
+			width: 100%;
+			height: auto;
+			.updates_description {
+				text-align: center;
+			}
+			.updates_gallery {
+				width: 100%;
+				height: auto;
+				.updates_gallery-image {
+					img {
+						width: 250px;
+						height: 180px;
+					}
+					&:hover {
+						.updates_gallery-layer {
+								transform: translate(0.8px, -183px);
+						}
+					}
+				}
+				.updates_gallery-layer {
+						width: 250px;
+					 	height: 180px;
+				}
+				.updates_gallery-text {
+					width: 102%;
+					height: 200px;
+					.updates_gallery-text-group {
+						width: 252px;
+						height: 170px;
+					}
+					h3 {
+						padding: 20px 15px 0 15px;
+						line-height: 16px;
+					}
+					p {
+						padding: 0 15px 10px 15px;
+						line-height: 24px;
+					}
+				}
+			}
+		}
+
+		.show {
+			width: 100%;
+			height: auto;
+			background: url('../images/Background/underwater.png') no-repeat center center;
+			-webkit-background-size: cover;
+		  	-moz-background-size: cover;
+		  	-o-background-size: cover;
+		  	background-size: cover;
+		  	background-position: 0% 60%;
+			overflow: hidden;
+			resize: both;
+			z-index: 2;
+			display: flex;
+			display: -webkit-flex;
+			justify-content: center;
+			align-items: center;
+			.show_content {
+				width: 80vw;
+				height: auto;
+				.show_content-paragraph {
+					margin-bottom: 25px;
+				}
+				.default-button {
+					margin-bottom: 40px;
+				}
+			}
+		}
+		.download {
+			height: auto;
+			width: 100%;
+			.col-md-12 {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.download_image {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+		 }
+		 .download_content {
+			 	margin-top: 51.25px;
+			 .download_content-title {
+				 margin-left: 0;
+				 h2 {
+					 padding: 0 10px;
+					 text-align: center;
+				 }
+			 }
+			 .download_content-rectangle {
+				 width: 100%;
+			 }
+			 .rectangle-decorative {
+				 margin: 22px auto;
+			 }
+			 .download_content-paragraph{
+				 margin: 0 auto 25px auto;
+				 p {
+					 text-align: center;
+					 padding: 0 10px;
+				 }
+			 }
+			 .download_content-button {
+				 margin: 0 auto 50px auto;
+				 display: flex;
+				 justify-content: center;
+				 default-button {
+					 margin: 0 auto 25px auto;
+				 }
+			 }
+		 }
+	 }
+
 }
 
 @media #{$desktop} {
