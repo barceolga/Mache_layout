@@ -116,6 +116,8 @@ $desktop: "(min-width: 992px)";
 		width: 1410px;
 		@include clearfix;
 	}
+
+
 	ul.main_header-logo-left {
 		display: flex;
 		display: -webkit-flex;
@@ -130,8 +132,7 @@ $desktop: "(min-width: 992px)";
 	}
 	ul.main_header-logo-right {
 		width: 500px;
-		display: flex-;
-		display: -webkit-flex;
+		display: flex;
 		justify-content: flex-end;
 		margin: 0 5px;
 		padding: 20px 0;
@@ -1163,19 +1164,54 @@ $desktop: "(min-width: 992px)";
 				width: 100vw;
 				@include clearfix;
 			}
+			.onclick-menu {
+				position: relative;
+				display: inline-block;
+			}
+			.onclick-menu::before {
+				content: "Menu";
+				color: #fff;
+				font-size: 2.5vh;
+				line-height: 3vh;
+				font-family: $fonts-principal;
+				font-weight: 700;
+		    display: flex;
+		    justify-content: flex-end;
+				padding: 10px;
+			}
+			.onclick-menu:focus {
+				pointer-events: none;
+			}
+			.onclick-menu:focus {
+				.onclick-menu-content {
+					opacity: 1;
+					visibility: visible;
+					pointer-events: auto;
+				}
+			}
+			.onclick-menu-content {
+				position: absolute;
+				z-index: 1;
+				opacity: 0;
+				visibility: hidden;
+				transition: visibility 0.8s;
+			}
+
 			ul.main_header-logo-left {
-				justify-content: center;
+				justify-content: flex-start;
 				font-size: 5vh;
 				line-height: 5vh;
 				letter-spacing: 1.15px;
-				padding: 1vh 0;
+				padding: 10px;
+				margin: 0 0 10vh 0;
 			}
 			ul.main_header-logo-right {
 				width: auto;
-				justify-content: center;
-				margin: 0 2.5px;
-				padding: 1vh 0;
-				line-height: 3.5vh;
+				flex-direction: column;
+				justify-content: flex-end;
+				align-items: flex-end;
+				margin: 2.5px 0;
+				padding: 1vh;
 			}
 			.main_header-logo-color {
 				font-size: 5vh;
@@ -1183,13 +1219,14 @@ $desktop: "(min-width: 992px)";
 			.main_header-logo-right {
 				li {
 					a {
-						font-size: 3.5vh;
-						line-height: 4vh;
+						font-size: 2.5vh;
+						line-height: 3vh;
+						color: #fff;
 					}
 				}
 			}
 			.main_slogan {
-				margin: 3vh auto;
+				margin: 6vh auto 2vh auto;
 				width: 100vw;
 			}
 			.main_slogan {
