@@ -1248,7 +1248,7 @@ $desktop: "(min-width: 992px)";
 				justify-content: center;
 				img {
 					width: 80vw;
-					height: auto;
+					height: 50%;
 				}
 			}
 		}
@@ -1272,8 +1272,8 @@ $desktop: "(min-width: 992px)";
 		.quotes {
 			margin-top: 33px;
 			position: relative;
-			height: auto;
-			width: 100vw;
+			height: 50%;
+			width: 100%;
 			background: url('../images/Background/underwater.png') no-repeat center center;
 			-webkit-background-size: cover;
 		  	-moz-background-size: cover;

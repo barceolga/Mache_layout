@@ -1348,7 +1348,7 @@ body * {
   }
   .about .about_image img {
     width: 80vw;
-    height: auto;
+    height: 50%;
   }
   .services {
     height: auto;
@@ -1365,8 +1365,8 @@ body * {
   .quotes {
     margin-top: 33px;
     position: relative;
-    height: auto;
-    width: 100vw;
+    height: 50%;
+    width: 100%;
     background: url("../images/Background/underwater.png") no-repeat center center;
     background-size: cover;
     background-position: 0% 100%;
