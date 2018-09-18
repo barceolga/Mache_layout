@@ -6,6 +6,7 @@
   "scripts": {
     "test": "npm-run-all test:*",
     "test:html": "globstar nu-html-checker *.html",
+    "test:js": "jshint ./js/*.js",
     "build": "npm-run-all build:* test",
     "build:clean": "rimraf css/*.css",
     "build:sass": "node-sass --output-style  compact -o css sass",
@@ -23,6 +24,7 @@
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.24.7",
     "globstar": "^1.0.0",
+    "jshint": "^2.9.6",
     "node-sass": "^4.9.3",
     "nu-html-checker": "^0.1.0",
     "onchange": "^4.1.0"
