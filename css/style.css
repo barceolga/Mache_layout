@@ -471,25 +471,32 @@ body * {
 }
 
 .quotes {
-  position: relative;
-  height: 501px;
+  /*position: relative;
+	height: 501px;
+	width: 100%;
+	background: url('../images/Background/Underwater_1.png') no-repeat center center;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	background-position: 0% 60%;
+	overflow: hidden;
+	resize: both;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;*/
+}
+
+.quotes {
   width: 100%;
-  background: url("../images/Background/Underwater_1.png") no-repeat center center;
-  background-size: cover;
-  background-position: 0% 60%;
-  overflow: hidden;
-  resize: both;
-  z-index: 2;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  height: 501px;
+  margin-bottom: 200px;
 }
 
 .quotes .quotes_content {
-  width: 1216px;
+  width: 100%;
+  height: auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -500,19 +507,80 @@ body * {
       flex-direction: column;
 }
 
-.quotes .quotes_content-title {
+.quotes .carousel {
+  margin: 0 auto;
+  width: 100vw;
+  height: 501px;
+  border: none;
+  overflow: hidden;
+  position: relative;
+}
+
+.quotes .carousel .list_carousel {
+  width: 300vw;
+  height: 501px;
+  list-style-type: none;
+  margin-left: -100vw;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.quotes .carousel .list_carousel li {
+  width: 100vw;
+  height: 501px;
+  list-style: none;
+  float: left;
+}
+
+.quotes .carousel .list_carousel img {
+  width: 100vw;
+  height: 501px;
+}
+
+.quotes .carousel .quotes_content-title-top {
+  margin: 0 auto;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  z-index: 2;
   color: #ed145b;
 }
 
-.quotes .quotes_content-title .fas {
+.quotes .carousel .quotes_content-title-top .fas {
   font-size: 55px;
 }
 
-.quotes .quotes_content [class*="col-"] {
-  height: 111px;
+.quotes .carousel .quotes_content-title-bottom {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  z-index: 2;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  color: #ed145b;
 }
 
-.quotes .quotes_content-paragraph {
+.quotes .carousel .quotes_content-title-bottom .fas {
+  font-size: 55px;
+}
+
+.quotes .carousel .quotes_content-arrows {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  z-index: 2;
+  width: 80%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.quotes .carousel .quotes_content-arrows .quotes_content-paragraph {
   color: #ffffff;
   font-family: "Lato", sans-serif;
   font-style: italic;
@@ -523,34 +591,52 @@ body * {
   text-align: center;
 }
 
-.quotes .quotes_content-arrows_1, .quotes .quotes_content-arrows_2 {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-  -ms-flex-align: center;
-      align-items: center;
-  margin: auto;
-}
-
-.quotes .quotes_content-arrows_2 {
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-}
-
-.quotes .quotes_content-arrows-left, .quotes .quotes_content-arrows-right {
+.quotes .carousel .quotes_content-arrows .quotes_content-arrows-left, .quotes .carousel .quotes_content-arrows .quotes_content-arrows-right {
   box-sizing: border-box;
+  margin-right: 10px;
   width: 20px;
   height: 20px;
   border-style: solid;
-  border-width: 2px;
+  border-width: 4px;
   border-radius: 5px;
   transform: rotate(45deg);
+  background-color: transparent;
   border-color: transparent transparent #fff #fff;
+  transition: 1s;
+  cursor: pointer;
 }
 
-.quotes .quotes_content-arrows-right {
+.quotes .carousel .quotes_content-arrows .quotes_content-arrows-left:hover, .quotes .carousel .quotes_content-arrows .quotes_content-arrows-right:hover {
+  border-color: transparent transparent #ed145b #ed145b;
+}
+
+.quotes .carousel .quotes_content-arrows .quotes_content-arrows-right {
   border-color: #fff #fff transparent transparent;
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+.quotes .carousel .quotes_content-arrows .quotes_content-arrows-right:hover {
+  border-color: #ed145b #ed145b transparent transparent;
+}
+
+.quotes .carousel .controls {
+  position: absolute;
+  margin: 0 auto;
+  left: 49%;
+  bottom: 30px;
+  float: left;
+  z-index: 2;
+}
+
+.quotes .carousel .controls button {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  background-color: transparent;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .prices {
@@ -2413,7 +2499,7 @@ body * {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1919px) {
   /* For desktop: */
   .col-lg-1 {
     width: 8.33%;
@@ -2449,6 +2535,57 @@ body * {
     width: 91.66%;
   }
   .col-lg-12 {
+    width: 100%;
+  }
+  .about img {
+    transform: scale(0.9);
+  }
+  .download .download_image {
+    transform: scale(0.8);
+    margin-right: 0;
+    margin-left: 50px;
+  }
+  .download .download_content {
+    width: 650px;
+    margin-top: 87px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .col-xl-1 {
+    width: 8.33%;
+  }
+  .col-xl-2 {
+    width: 16.66%;
+  }
+  .col-xl-3 {
+    width: 25%;
+  }
+  .col-xl-4 {
+    width: 33.33%;
+  }
+  .col-xl-5 {
+    width: 41.66%;
+  }
+  .col-xl-6 {
+    width: 50%;
+  }
+  .col-xl-7 {
+    width: 58.33%;
+  }
+  .col-xl-8 {
+    width: 66.66%;
+  }
+  .col-xl-9 {
+    width: 75%;
+  }
+  .col-xl-10 {
+    width: 83.33%;
+  }
+  .col-xl-11 {
+    width: 91.66%;
+  }
+  .col-xl-12 {
     width: 100%;
   }
 }
