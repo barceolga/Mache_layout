@@ -2154,7 +2154,7 @@ body * {
     -ms-flex-pack: center;
         justify-content: center;
   }
-  .about .about-title h2 {
+  .about h2 {
     text-align: center;
     padding: 0 15px;
     margin-left: none;
@@ -2290,6 +2290,16 @@ body * {
     width: 100%;
     height: auto;
   }
+  .updates .updates_gallery [class*="col-md"] {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
   .updates .updates_gallery .updates_gallery-image img {
     width: 250px;
     height: 180px;
@@ -2308,6 +2318,7 @@ body * {
   .updates .updates_gallery .updates_gallery-text .updates_gallery-text-group {
     width: 252px;
     height: 170px;
+    margin: 0 auto;
   }
   .updates .updates_gallery .updates_gallery-text h3 {
     padding: 20px 15px 0 15px;

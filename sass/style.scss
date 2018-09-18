@@ -2028,12 +2028,13 @@ $desktop: "(min-width: 1200px)";
 			.about-title {
 				display: flex;
 				justify-content: center;
-				h2 {
-					text-align: center;
-					padding: 0 15px;
-					margin-left: none;
-				}
 			}
+			h2 {
+				text-align: center;
+				padding: 0 15px;
+				margin-left: none;
+			}
+
 			p {
 				padding: 0 15px;
 			}
@@ -2171,6 +2172,12 @@ $desktop: "(min-width: 1200px)";
 			.updates_gallery {
 				width: 100%;
 				height: auto;
+				[class*="col-md"]{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+				}
 				.updates_gallery-image {
 					img {
 						width: 250px;
@@ -2192,6 +2199,7 @@ $desktop: "(min-width: 1200px)";
 					.updates_gallery-text-group {
 						width: 252px;
 						height: 170px;
+						margin: 0 auto;
 					}
 					h3 {
 						padding: 20px 15px 0 15px;
