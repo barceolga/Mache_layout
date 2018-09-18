@@ -1229,7 +1229,9 @@ $desktop: "(min-width: 1200px)";
 		}
 
 		.rectangle-gradient {
-			width: 97.1%;
+			width: 95%;
+    	height: 3.5vh;
+    	transform: rotate(-1.75deg) scale(1.1) translate(0, -10px);
 		}
 
 		.about {
@@ -1630,7 +1632,9 @@ $desktop: "(min-width: 1200px)";
 		}
 
 		.rectangle-gradient {
-			width: 97.1%;
+			width: 95%;
+    	height: 26px;
+    	transform: rotate(-1.7deg) scale(1.1) translate(0, -10px);
 		}
 
 		.about {
