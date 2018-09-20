@@ -15,6 +15,7 @@ body h2 {
   font-style: italic;
   line-height: 47px;
   letter-spacing: 0.95px;
+  color: #5a5a5a;
 }
 
 body h3 {
@@ -231,6 +232,7 @@ body * {
   width: 100%;
   height: 430px;
   background-color: #fff;
+  margin-top: 85px;
 }
 
 .row:after {
@@ -376,26 +378,21 @@ body * {
   background-color: #ffffff;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
 }
 
 .about .button-play {
   box-sizing: border-box;
-  height: 6px;
-  width: 6px;
+  height: 9px;
+  width: 9px;
   border: solid;
-  border-width: 3px 0 3px 6px;
+  border-width: 4.5px 0 4.5px 9px;
   border-color: #fff #fff #fff #ed145b;
-  margin: 0 auto;
+  margin: 0 3px 0 auto;
+  display: block;
 }
 
 .about .about_video {
   display: inline;
-}
-
-.about .about_image {
-  transform: scale(0.8);
 }
 
 .services {
@@ -523,8 +520,8 @@ body * {
 .quotes .carousel .quotes_content-title-top {
   margin: 0 auto;
   position: absolute;
-  top: 60px;
-  left: 50%;
+  top: 90px;
+  left: 48%;
   z-index: 2;
   color: #ed145b;
 }
@@ -536,8 +533,8 @@ body * {
 .quotes .carousel .quotes_content-title-bottom {
   margin: 0 auto;
   position: absolute;
-  bottom: 60px;
-  left: 50%;
+  bottom: 90px;
+  left: 48%;
   z-index: 2;
   display: -ms-flexbox;
   display: flex;
@@ -552,10 +549,10 @@ body * {
 
 .quotes .carousel .quotes_content-arrows {
   position: absolute;
-  top: 40%;
-  left: 33%;
+  top: 35%;
+  left: 395px;
   z-index: 2;
-  width: 33%;
+  width: 1216px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -566,16 +563,16 @@ body * {
   color: #ffffff;
   font-family: "Lato", sans-serif;
   font-style: italic;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 33px;
   letter-spacing: 0.63px;
   text-align: center;
 }
 
 .quotes .carousel .quotes_content-arrows .quotes_content-arrows-left, .quotes .carousel .quotes_content-arrows .quotes_content-arrows-right {
   box-sizing: border-box;
-  margin-right: 10px;
+  margin-right: 196px;
   width: 20px;
   height: 20px;
   border-style: solid;
@@ -595,7 +592,7 @@ body * {
 .quotes .carousel .quotes_content-arrows .quotes_content-arrows-right {
   border-color: #fff #fff transparent transparent;
   margin-right: 0px;
-  margin-left: 10px;
+  margin-left: 196px;
 }
 
 .quotes .carousel .quotes_content-arrows .quotes_content-arrows-right:hover {
@@ -605,7 +602,7 @@ body * {
 .quotes .carousel .controls {
   position: absolute;
   margin: 0 auto;
-  left: 49%;
+  left: 47%;
   bottom: 30px;
   float: left;
   z-index: 2;
@@ -638,13 +635,13 @@ body * {
       align-items: center;
   -ms-flex-direction: column;
       flex-direction: column;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 
 .prices .prices_description h2 {
   text-align: center;
   text-transform: capitalize;
-  margin-top: 150px;
+  margin: 250px auto 0 auto;
 }
 
 .prices .rectangle-decorative {
@@ -844,7 +841,7 @@ body * {
 
 .rectangle {
   width: 100%;
-  height: 150px;
+  height: 200px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -880,12 +877,12 @@ body * {
   text-align: center;
   text-transform: uppercase;
   border: none;
-  height: 35px;
-  width: 140px;
+  height: 50px;
+  width: 200px;
   font-family: "Lato", sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
-  border-radius: 15px;
+  border-radius: 25px;
   margin-left: 5px;
 }
 
@@ -1002,7 +999,7 @@ body * {
 }
 
 .updates .updates_gallery-layer i.fa {
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .updates .updates_gallery-image:hover .updates_gallery-layer {
@@ -1121,11 +1118,11 @@ body * {
 }
 
 .show .rectangle-decorative {
-  margin: 22px 0 22px 10px;
+  margin: 20px 0 20px 10px;
 }
 
 .show .show_content-paragraph {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 .show .show_content-paragraph p {
@@ -1319,8 +1316,8 @@ body * {
   .main .onclick-menu::before {
     content: "Menu";
     color: #fff;
-    font-size: 2.5vh;
-    line-height: 3vh;
+    font-size: 16px;
+    line-height: 18px;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     display: -ms-flexbox;
@@ -1337,6 +1334,7 @@ body * {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    background-color: #5a5a5a;
   }
   .main .onclick-menu-content {
     position: absolute;
@@ -1348,8 +1346,8 @@ body * {
   .main ul.main_header-logo-left {
     -ms-flex-pack: start;
         justify-content: flex-start;
-    font-size: 5vh;
-    line-height: 5vh;
+    font-size: 24px;
+    line-height: 25px;
     letter-spacing: 1.15px;
     padding: 10px;
     margin: 0 0 10vh 0;
@@ -1366,30 +1364,30 @@ body * {
     padding: 1vh;
   }
   .main .main_header-logo-color {
-    font-size: 5vh;
+    font-size: 24px;
   }
   .main .main_header-logo-right li a {
-    font-size: 2.5vh;
-    line-height: 3vh;
+    font-size: 16px;
+    line-height: 18px;
     color: #fff;
   }
   .main .main_slogan {
-    margin: 6vh auto 2vh auto;
+    margin: 4vh auto 2vh auto;
     width: 100vw;
   }
   .main .main_slogan h1 {
-    font-size: 8vh;
+    font-size: 46px;
     text-align: center;
-    line-height: 7.5vh;
+    line-height: 40px;
     margin: 3vh auto;
   }
   .main .main_slogan .rectangle-decorative {
     margin: 5vh 0px;
   }
   .main .main_slogan p {
-    font-size: 3vh;
-    line-height: 3vh;
-    margin: 0 auto;
+    font-size: 22px;
+    line-height: 25px;
+    margin: 10px auto;
     width: 90vw;
   }
   .main .main_slogan .default-button {
@@ -1423,6 +1421,9 @@ body * {
   }
   .about .about_video h3 {
     text-align: center;
+  }
+  .about .about_video .about_video-button {
+    margin: 10px auto 25px auto;
   }
   .about .about_image {
     display: -ms-flexbox;
@@ -1469,11 +1470,17 @@ body * {
   }
   .quotes .carousel .quotes_content-arrows {
     top: 15%;
-    left: 5%;
-    width: 90%;
+    left: 2.5%;
+    width: 95%;
+  }
+  .quotes .carousel .quotes_content-arrows .quotes_content-arrows-left, .quotes .carousel .quotes_content-arrows .quotes_content-arrows-right {
+    margin-right: 0px;
   }
   .quotes .carousel .quotes_content-arrows .quotes_content-paragraph {
     font-size: 12px;
+  }
+  .quotes .carousel .quotes_content-arrows .quotes_content-arrows-right {
+    margin-left: 0px;
   }
   .quotes .carousel .quotes_content-title-bottom {
     bottom: 15%;
@@ -1765,8 +1772,8 @@ body * {
   .main ul.main_header-logo-left {
     -ms-flex-pack: start;
         justify-content: flex-start;
-    font-size: 5vh;
-    line-height: 5vh;
+    font-size: 24px;
+    line-height: 25px;
     letter-spacing: 1.15px;
     padding: 10px;
     margin: 0 0 0 15px;
@@ -1781,29 +1788,29 @@ body * {
     padding: 10px;
   }
   .main .main_header-logo-color {
-    font-size: 5vh;
+    font-size: 24px;
   }
   .main .main_header-logo-right li a {
-    font-size: 3.5vh;
-    line-height: 4vh;
+    font-size: 16px;
+    line-height: 18px;
     color: #fff;
   }
   .main .main_slogan {
-    margin: 6vh auto 2vh auto;
+    margin: 2vh auto 2vh auto;
     width: 100vw;
   }
   .main .main_slogan h1 {
-    font-size: 8vh;
+    font-size: 46px;
     text-align: center;
-    line-height: 7.5vh;
+    line-height: 40px;
     margin: 3vh auto;
   }
   .main .main_slogan .rectangle-decorative {
     margin: 5vh 0px;
   }
   .main .main_slogan p {
-    font-size: 3vh;
-    line-height: 3vh;
+    font-size: 16px;
+    line-height: 18px;
     margin: 0 auto;
     width: 90vw;
   }
@@ -1817,6 +1824,9 @@ body * {
   }
   .about {
     height: auto;
+  }
+  .about .about_video-button {
+    margin: 10px auto 25px auto;
   }
   .row:after {
     content: "";
@@ -1894,8 +1904,14 @@ body * {
     left: 15%;
     width: 70%;
   }
+  .quotes .carousel .quotes_content-arrows .quotes_content-arrows-left, .quotes .carousel .quotes_content-arrows .quotes_content-arrows-right {
+    margin-right: 10px;
+  }
   .quotes .carousel .quotes_content-arrows .quotes_content-paragraph {
     font-size: 12px;
+  }
+  .quotes .carousel .quotes_content-arrows .quotes_content-arrows-right {
+    margin-left: 10px;
   }
   .quotes .carousel .quotes_content-title-bottom {
     bottom: 15%;
@@ -2258,8 +2274,7 @@ body * {
         align-items: center;
   }
   .about .about_image img {
-    width: auto;
-    height: auto;
+    transform: scale(0.8);
   }
   .services {
     height: auto;
@@ -2269,7 +2284,7 @@ body * {
   }
   .quotes {
     margin-top: 33px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
     position: relative;
     height: 204px;
     width: 100%;
@@ -2289,12 +2304,18 @@ body * {
     font-size: 33px;
   }
   .quotes .carousel .quotes_content-arrows {
-    top: 30%;
-    left: 15%;
-    width: 70%;
+    top: 25%;
+    left: 7.5%;
+    width: 85%;
+  }
+  .quotes .carousel .quotes_content-arrows .quotes_content-arrows-left, .quotes .carousel .quotes_content-arrows .quotes_content-arrows-right {
+    margin-right: 5px;
   }
   .quotes .carousel .quotes_content-arrows .quotes_content-paragraph {
     font-size: 16px;
+  }
+  .quotes .carousel .quotes_content-arrows .quotes_content-arrows-right {
+    margin-left: 5px;
   }
   .quotes .carousel .quotes_content-title-bottom {
     bottom: 15%;
@@ -2556,12 +2577,12 @@ body * {
   }
   .quotes {
     width: 100%;
-    height: 501px;
+    height: 401px;
     margin-bottom: 200px;
   }
   .quotes .quotes_content {
     width: 100%;
-    height: 501px;
+    height: 401px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -2574,14 +2595,14 @@ body * {
   .quotes .carousel {
     margin: 0 auto;
     width: 100vw;
-    height: 501px;
+    height: 401px;
     border: none;
     overflow: hidden;
     position: relative;
   }
   .quotes .carousel .list_carousel {
     width: 300vw;
-    height: 501px;
+    height: 401px;
     list-style-type: none;
     margin-left: -100vw;
     padding: 0;
@@ -2626,10 +2647,10 @@ body * {
   }
   .quotes .carousel .quotes_content-arrows {
     position: absolute;
-    top: 40%;
-    left: 33%;
+    top: 35%;
+    left: 25%;
     z-index: 2;
-    width: 33%;
+    width: 60%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -2647,7 +2668,7 @@ body * {
   }
   .quotes .carousel .quotes_content-arrows .quotes_content-arrows-left, .quotes .carousel .quotes_content-arrows .quotes_content-arrows-right {
     box-sizing: border-box;
-    margin-right: 10px;
+    margin-right: 100px;
     width: 20px;
     height: 20px;
     border-style: solid;
@@ -2664,7 +2685,7 @@ body * {
   }
   .quotes .carousel .quotes_content-arrows .quotes_content-arrows-right {
     box-sizing: border-box;
-    margin-right: 10px;
+    margin-left: 100px;
     width: 20px;
     height: 20px;
     border-style: solid;
@@ -2695,6 +2716,12 @@ body * {
     background-color: transparent;
     margin-right: 10px;
     cursor: pointer;
+  }
+  .prices {
+    height: auto;
+  }
+  .prices .prices_description h2 {
+    margin-top: 200px;
   }
 }
 
