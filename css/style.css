@@ -2400,6 +2400,7 @@ body * {
   }
   .description .description_table {
     margin-bottom: 0;
+    margin-right: 0;
     width: 95vw;
   }
   .description .description_table .description_icons {
