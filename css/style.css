@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato::300i,900");
 body {
   margin: 0;
+  overflow: auto;
 }
 
 body h2 {
@@ -58,6 +59,9 @@ body .rectangle-decorative {
 
 body * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
 }
 
 .main {
@@ -226,13 +230,15 @@ body * {
   background-color: #ed145b;
   transform: rotate(-0.7deg) scale(1.1) translate(0, -10px);
   z-index: -1;
+  overflow: hidden;
 }
 
 .about {
   width: 100%;
-  height: 430px;
+  height: auto;
   background-color: #fff;
   margin-top: 85px;
+  overflow: hidden;
 }
 
 .row:after {
@@ -398,6 +404,7 @@ body * {
 .services {
   width: 100%;
   height: 400px;
+  overflow: hidden;
 }
 
 .services .services_description {
@@ -470,7 +477,7 @@ body * {
 .quotes {
   width: 100%;
   height: 501px;
-  margin-bottom: 200px;
+  overflow: hidden;
 }
 
 .quotes .quotes_content {
@@ -622,6 +629,7 @@ body * {
   width: 100%;
   height: 1016px;
   background-color: #f4f4f4;
+  overflow: hidden;
 }
 
 .prices .prices_description {
@@ -810,6 +818,7 @@ body * {
   height: 400px;
   margin-top: 120px;
   margin-bottom: 120px;
+  overflow: hidden;
 }
 
 .description .description_table {
@@ -849,6 +858,7 @@ body * {
   -ms-flex-align: center;
       align-items: center;
   background-color: #ed145b;
+  overflow: hidden;
 }
 
 .rectangle .rectangle_table {
@@ -914,6 +924,7 @@ body * {
       align-items: center;
   -ms-flex-direction: column;
       flex-direction: column;
+  overflow: hidden;
 }
 
 .updates div .updates_description {
@@ -1137,6 +1148,7 @@ body * {
 .download {
   width: 100%;
   height: 754px;
+  overflow: hidden;
 }
 
 .download .row:after {
@@ -1215,6 +1227,7 @@ body * {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+  overflow: hidden;
 }
 
 .footer .row {
