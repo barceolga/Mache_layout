@@ -1400,6 +1400,7 @@ body * {
   }
   .about {
     height: auto;
+    margin-top: 42.5px;
   }
   .row:after {
     content: "";
@@ -1769,6 +1770,40 @@ body * {
     display: table;
     clear: both;
   }
+  .main .onclick-menu {
+    position: relative;
+    display: inline-block;
+  }
+  .main .onclick-menu::before {
+    content: "Menu";
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    padding: 10px;
+    float: none;
+  }
+  .main .onclick-menu:focus {
+    pointer-events: none;
+  }
+  .main .onclick-menu:focus .onclick-menu-content {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    background-color: #5a5a5a;
+  }
+  .main .onclick-menu-content {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.8s;
+  }
   .main ul.main_header-logo-left {
     -ms-flex-pack: start;
         justify-content: flex-start;
@@ -1780,19 +1815,21 @@ body * {
   }
   .main ul.main_header-logo-right {
     width: auto;
+    -ms-flex-direction: column;
+        flex-direction: column;
     -ms-flex-pack: end;
         justify-content: flex-end;
     -ms-flex-align: end;
         align-items: flex-end;
-    margin: 0;
-    padding: 10px;
+    margin: 2.5px 0;
+    padding: 5px;
   }
   .main .main_header-logo-color {
     font-size: 24px;
   }
   .main .main_header-logo-right li a {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 17px;
     color: #fff;
   }
   .main .main_slogan {
@@ -1824,6 +1861,7 @@ body * {
   }
   .about {
     height: auto;
+    margin-top: 42.5px;
   }
   .about .about_video-button {
     margin: 10px auto 25px auto;
