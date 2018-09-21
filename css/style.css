@@ -114,6 +114,7 @@ body * {
   font-family: 'Raleway - Black', sans-serif;
   line-height: 25px;
   letter-spacing: 1.15px;
+  padding: 20px 0;
 }
 
 .main ul.main_header-logo-right {
@@ -364,9 +365,14 @@ body * {
 
 .about p {
   color: #5a5a5a;
+  margin-bottom: 20px;
 }
 
-.about .about_video .col-lg-3 {
+.about .about_video {
+  margin-top: 20px;
+}
+
+.about .about_video .col-lg-4 {
   padding-right: 0;
 }
 
@@ -378,10 +384,10 @@ body * {
 .about .about_video-button {
   width: 30px;
   height: 30px;
-  margin: 10px auto 0 auto;
+  margin: 0;
   border: 0.5px solid #ed145b;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #fff;
   display: -ms-flexbox;
   display: flex;
 }
@@ -393,7 +399,7 @@ body * {
   border: solid;
   border-width: 4.5px 0 4.5px 9px;
   border-color: #fff #fff #fff #ed145b;
-  margin: 0 3px 0 auto;
+  margin: 0 auto;
   display: block;
 }
 
@@ -671,17 +677,9 @@ body * {
   width: 1138px;
 }
 
-.prices .col-3 {
-  height: 311px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-}
-
 .prices .prices_standard, .prices .prices_business, .prices .prices_premium, .prices .prices_unlimited {
   position: relative;
-  height: 463px;
+  height: 403px;
   width: 262px;
   display: -ms-flexbox;
   display: flex;
@@ -724,7 +722,7 @@ body * {
   font-family: "Lato", sans-serif;
   font-size: 15px;
   font-weight: 300;
-  line-height: 26px;
+  line-height: 33px;
   letter-spacing: 0.38px;
   text-align: center;
 }
@@ -815,9 +813,8 @@ body * {
   -ms-flex-align: center;
       align-items: center;
   width: 100%;
-  height: 400px;
+  height: 600px;
   margin-top: 120px;
-  margin-bottom: 120px;
   overflow: hidden;
 }
 
@@ -826,10 +823,15 @@ body * {
   margin-right: 50px;
 }
 
+.description .row {
+  margin-bottom: 40px;
+}
+
 .description h3 {
   color: #ed145b;
   text-align: left;
   padding-right: 5px;
+  margin-bottom: 10px;
 }
 
 .description p {
@@ -842,10 +844,9 @@ body * {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
   color: #ed145b;
-  margin-top: 15px;
 }
 
 .rectangle {
@@ -1451,6 +1452,7 @@ body * {
   }
   .services {
     height: auto;
+    margin-top: 40px;
   }
   .services .services_description-paragraph {
     padding: 0 10px;
@@ -1463,7 +1465,6 @@ body * {
   }
   .quotes {
     margin-top: 33px;
-    margin-bottom: 50px;
     position: relative;
     height: 200px;
     width: 100%;
@@ -1516,7 +1517,7 @@ body * {
   }
   .prices .prices_description {
     width: 100vw;
-    margin-bottom: 4vh;
+    margin: 40px auto;
   }
   .prices .prices_description h2 {
     margin-top: 0;
@@ -1543,11 +1544,17 @@ body * {
         justify-content: center;
     width: 100vw;
     height: auto;
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
   }
   .description .description_table {
     width: 100vw;
-    margin: 0 auto;
+    margin: 40px auto;
+  }
+  .description .description_table .row {
+    margin-bottom: 0;
+  }
+  .description .description_table .row [class*="col-sm"] {
+    margin-bottom: 20px;
   }
   .rectangle {
     width: 100%;
@@ -1646,6 +1653,9 @@ body * {
     width: 80%;
     height: auto;
   }
+  .show .show_content .show_content-title h2 {
+    margin-top: 10px;
+  }
   .show .default-button {
     margin-bottom: 50px;
   }
@@ -1681,8 +1691,9 @@ body * {
     margin-left: 0;
   }
   .download .download_content-title h2 {
-    padding: 0 10px;
+    padding: 20px 10px;
     text-align: center;
+    margin-top: 40px;
   }
   .download .download_content-rectangle {
     width: 100%;
@@ -1876,6 +1887,9 @@ body * {
     height: auto;
     margin-top: 42.5px;
   }
+  .about .about_video h3 {
+    margin-top: 20px;
+  }
   .about .about_video-button {
     margin: 10px auto 25px auto;
   }
@@ -1912,6 +1926,7 @@ body * {
   }
   .services {
     height: auto;
+    margin-top: 40px;
   }
   .services .services_description-paragraph {
     padding: 0 10px;
@@ -1931,7 +1946,6 @@ body * {
   }
   .quotes {
     margin-top: 33px;
-    margin-bottom: 50px;
     position: relative;
     height: 200px;
     width: 100%;
@@ -1984,7 +1998,7 @@ body * {
   }
   .prices .prices_description {
     width: 100vw;
-    margin-bottom: 4vh;
+    margin: 40px auto;
   }
   .prices .prices_description h2 {
     margin-top: 0;
@@ -2018,9 +2032,18 @@ body * {
     height: auto;
     margin: 0 auto;
   }
+  .description {
+    margin: 40px auto;
+  }
   .description .description_table {
     width: 100vw;
-    margin: 0 auto;
+    margin: 40px auto;
+  }
+  .description .description_table .row {
+    margin-bottom: 0;
+  }
+  .description .description_table .row [class*="col-sml"] {
+    margin-bottom: 20px;
   }
   .rectangle {
     width: 100%;
@@ -2119,6 +2142,9 @@ body * {
     width: 80%;
     height: auto;
   }
+  .show .show_content .show_content-title h2 {
+    margin-top: 20px;
+  }
   .show .default-button {
     margin-bottom: 50px;
   }
@@ -2154,8 +2180,9 @@ body * {
     margin-left: 0;
   }
   .download .download_content-title h2 {
-    padding: 0 10px;
+    padding: 20px 10px;
     text-align: center;
+    margin-top: 40px;
   }
   .download .download_content-rectangle {
     width: 100%;
@@ -2257,6 +2284,7 @@ body * {
   }
   .main .main_header .main_header-logo-left {
     width: auto;
+    padding: 20px 0 0 10px;
   }
   .main .main_header .main_header-logo-right {
     width: auto;
@@ -2312,6 +2340,7 @@ body * {
   }
   .about .about_video h3 {
     text-align: center;
+    margin-top: 20px;
   }
   .about .about_video div .about_video-button {
     margin: 0 auto 25px auto;
@@ -2443,6 +2472,7 @@ body * {
     text-align: center;
     line-height: 38px;
     padding: 0 15px;
+    margin: 25px auto;
   }
   .rectangle .rectangle_table button {
     margin: 0 auto 25px auto;
@@ -2516,6 +2546,9 @@ body * {
     width: 80vw;
     height: auto;
   }
+  .show .show_content .show_content-title h2 {
+    margin-top: 10px;
+  }
   .show .show_content .show_content-paragraph {
     margin-bottom: 25px;
   }
@@ -2549,8 +2582,9 @@ body * {
     margin-left: 0;
   }
   .download .download_content .download_content-title h2 {
-    padding: 0 10px;
+    padding: 20px 10px;
     text-align: center;
+    margin-top: 40px;
   }
   .download .download_content .download_content-rectangle {
     width: 100%;

@@ -133,6 +133,7 @@ $desktop_large: "(min-width: 1920px)";
 		font-family: 'Raleway - Black', sans-serif;
 		line-height: 25px;
 		letter-spacing: 1.15px;
+		padding: 20px 0;
 	}
 	ul.main_header-logo-right {
 		width: 500px;
@@ -352,9 +353,12 @@ $desktop_large: "(min-width: 1920px)";
 	}
 	p {
 	    color: $website-grey;
+			margin-bottom: 20px;
 	 }
+
 	.about_video {
-		.col-lg-3 {
+		margin-top: 20px;
+		.col-lg-4 {
 			padding-right: 0;
 		}
 	}
@@ -367,10 +371,10 @@ $desktop_large: "(min-width: 1920px)";
 	.about_video-button {
 		width: 30px;
 		height: 30px;
-		margin: 10px auto 0 auto;
+		margin: 0;
 		border: 0.5px solid $project-pink;
 		border-radius: 50%;
-		background-color: #ffffff;
+		background-color: #fff;
 		display: flex;
 	}
 	.button-play {
@@ -380,7 +384,7 @@ $desktop_large: "(min-width: 1920px)";
 		border: solid;
 		border-width: 4.5px 0 4.5px 9px;
 		border-color: #fff  #fff #fff $project-pink;
-		margin: 0 3px 0 auto;
+		margin: 0 auto;
 		display: block;
 	}
 	.about_video {
@@ -618,14 +622,10 @@ $desktop_large: "(min-width: 1920px)";
 		align-items: center;
 		width: 1138px;
 	}
-	.col-3 {
-		height: 311px;
-		display: flex;
-		justify-content: center;
-	}
+
 	.prices_standard {
 		position: relative;
-		height: 463px;
+		height: 403px;
 		width: 262px;
 		display: flex;
 		justify-content: center;
@@ -700,7 +700,7 @@ $desktop_large: "(min-width: 1920px)";
 		font-family: $fonts-principal;
 		font-size: 15px;
 		font-weight: 300;
-		line-height: 26px;
+		line-height: 33px;
 		letter-spacing: 0.38px;
 		text-align: center;
 	}
@@ -790,9 +790,8 @@ $desktop_large: "(min-width: 1920px)";
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
-	height: 400px;
+	height: 600px;
 	margin-top: 120px;
-	margin-bottom: 120px;
 	overflow: hidden;
 }
 .description {
@@ -800,10 +799,14 @@ $desktop_large: "(min-width: 1920px)";
 		width: 1138px;
 		margin-right: 50px;
 	}
+	.row {
+		margin-bottom: 40px;
+	}
 	h3 {
 		color: $project-pink;
     	text-align: left;
     	padding-right: 5px;
+			margin-bottom: 10px;
 	}
 	p {
 	    text-align: left;
@@ -812,9 +815,8 @@ $desktop_large: "(min-width: 1920px)";
 	.description_icons {
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
 		color: $project-pink;
-		margin-top: 15px;
 	}
 }
 
@@ -1344,6 +1346,7 @@ $desktop_large: "(min-width: 1920px)";
 
 		.services {
 			height: auto;
+			margin-top: 40px;
 		}
 
 		.services {
@@ -1360,7 +1363,6 @@ $desktop_large: "(min-width: 1920px)";
 
 		.quotes {
 			margin-top: 33px;
-			margin-bottom: 50px;
 			position: relative;
 			height: 200px;
 			width: 100%;
@@ -1418,7 +1420,7 @@ $desktop_large: "(min-width: 1920px)";
 			margin: 0 auto;
 			 	.prices_description {
 					width: 100vw;
-					margin-bottom: 4vh;
+					margin: 40px auto;
 					h2 {
 						margin-top: 0;
 					}
@@ -1441,12 +1443,18 @@ $desktop_large: "(min-width: 1920px)";
 			justify-content: center;
 			width: 100vw;
 			height: auto;
-			margin: 0 auto;
+			margin: 40px auto 0 auto;
 		}
 		.description {
 			.description_table {
 				width: 100vw;
-				margin: 0 auto;
+				margin: 40px auto;
+				.row {
+					margin-bottom: 0;
+					[class*="col-sm"] {
+						margin-bottom: 20px;
+					}
+				}
 			}
 		}
 
@@ -1547,6 +1555,11 @@ $desktop_large: "(min-width: 1920px)";
 	 .show_content {
 		 width: 80%;
 		 height: auto;
+		 .show_content-title {
+			 h2 {
+				 margin-top: 10px;
+			 }
+		 }
 	 }
 	 .default-button {
 		 margin-bottom: 50px;
@@ -1581,8 +1594,9 @@ $desktop_large: "(min-width: 1920px)";
 	 .download_content-title {
 		 margin-left: 0;
 		 h2 {
-			 padding: 0 10px;
+			 padding: 20px 10px;
 			 text-align: center;
+			 margin-top: 40px;
 		 }
 	 }
 	 .download_content-rectangle {
@@ -1758,6 +1772,11 @@ $desktop_large: "(min-width: 1920px)";
 		.about {
 			height: auto;
 			margin-top: 42.5px;
+			.about_video {
+				h3 {
+					margin-top: 20px;
+				}
+			}
 			.about_video-button {
 				margin: 10px auto 25px auto;
 			}
@@ -1796,6 +1815,7 @@ $desktop_large: "(min-width: 1920px)";
 
 		.services {
 			height: auto;
+			margin-top: 40px;
 		}
 
 		.services {
@@ -1820,7 +1840,6 @@ $desktop_large: "(min-width: 1920px)";
 
 		.quotes {
 			margin-top: 33px;
-			margin-bottom: 50px;
 			position: relative;
 			height: 200px;
 			width: 100%;
@@ -1877,7 +1896,7 @@ $desktop_large: "(min-width: 1920px)";
 			margin: 0 auto;
 			 	.prices_description {
 					width: 100vw;
-					margin-bottom: 4vh;
+					margin: 40px auto;
 					h2 {
 						margin-top: 0;
 					}
@@ -1908,9 +1927,16 @@ $desktop_large: "(min-width: 1920px)";
 			margin: 0 auto;
 		}
 		.description {
+			margin: 40px auto;
 			.description_table {
 				width: 100vw;
-				margin: 0 auto;
+				margin: 40px auto;
+				.row {
+					margin-bottom: 0;
+					[class*="col-sml"] {
+						margin-bottom: 20px;
+					}
+				}
 			}
 		}
 
@@ -2011,6 +2037,11 @@ $desktop_large: "(min-width: 1920px)";
 	 .show_content {
 		 width: 80%;
 		 height: auto;
+		 .show_content-title {
+			 h2 {
+				 margin-top: 20px;
+			 }
+		 }
 	 }
 	 .default-button {
 		 margin-bottom: 50px;
@@ -2045,8 +2076,9 @@ $desktop_large: "(min-width: 1920px)";
 	 .download_content-title {
 		 margin-left: 0;
 		 h2 {
-			 padding: 0 10px;
+			 padding: 20px 10px;
 			 text-align: center;
+			 margin-top: 40px;
 		 }
 	 }
 	 .download_content-rectangle {
@@ -2122,6 +2154,7 @@ $desktop_large: "(min-width: 1920px)";
 					width: 100vw;
 					.main_header-logo-left {
 						width: auto;
+						padding: 20px 0 0 10px;
 					}
 					.main_header-logo-right {
 						width: auto;
@@ -2179,6 +2212,7 @@ $desktop_large: "(min-width: 1920px)";
 			.about_video {
 				h3 {
 					text-align: center;
+					margin-top: 20px;
 				}
 				div {
 					.about_video-button {
@@ -2316,6 +2350,7 @@ $desktop_large: "(min-width: 1920px)";
 					text-align: center;
 					line-height: 38px;
 					padding: 0 15px;
+					margin: 25px auto;
 				}
 				button {
 					margin: 0 auto 25px auto;
@@ -2391,6 +2426,11 @@ $desktop_large: "(min-width: 1920px)";
 			.show_content {
 				width: 80vw;
 				height: auto;
+				.show_content-title  {
+					h2 {
+						margin-top: 10px;
+					}
+				}
 				.show_content-paragraph {
 					margin-bottom: 25px;
 				}
@@ -2417,8 +2457,9 @@ $desktop_large: "(min-width: 1920px)";
 			 .download_content-title {
 				 margin-left: 0;
 				 h2 {
-					 padding: 0 10px;
+					 padding: 20px 10px;
 					 text-align: center;
+					 margin-top: 40px;
 				 }
 			 }
 			 .download_content-rectangle {
