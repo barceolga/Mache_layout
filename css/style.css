@@ -87,7 +87,7 @@ body * {
   -ms-flex-align: center;
       align-items: center;
   border: none;
-  margin: 0 auto;
+  margin: 0 auto 0 432px;
   width: 1410px;
   line-height: 25px;
 }
@@ -121,8 +121,8 @@ body * {
   width: 500px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   margin: 0 5px;
   padding: 20px 0;
   list-style-type: none;
@@ -170,7 +170,7 @@ body * {
 .main .main_slogan {
   border: none;
   position: relative;
-  margin: 175px auto;
+  margin: 225px auto;
   width: 1200px;
   display: -ms-flexbox;
   display: flex;
@@ -189,10 +189,9 @@ body * {
   text-align: center;
   font-weight: 100;
   text-align: center;
-  line-height: 18px;
+  line-height: 46px;
   font-family: 'Lato', sans-serif;
   letter-spacing: 1.15px;
-  margin-right: 120px;
 }
 
 .main .main_slogan .main_slogan-strong {
@@ -204,7 +203,7 @@ body * {
   border: 1px solid #ed145b;
   width: 200px;
   height: 1.4px;
-  margin: 25px 120px 25px 0px;
+  margin: 25px 0;
 }
 
 .main .main_slogan p {
@@ -215,12 +214,10 @@ body * {
   font-weight: 200;
   line-height: 33px;
   letter-spacing: 1.15px;
-  margin-right: 120px;
 }
 
 .main .main_slogan .default-button {
   margin-top: 45px;
-  margin-right: 120px;
 }
 
 .rectangle-gradient {
@@ -1314,6 +1311,7 @@ body * {
   .main .main_header {
     width: 100vw;
     line-height: 5vh;
+    margin: 0 auto;
   }
   .main .row {
     width: 100vw;
@@ -1785,6 +1783,7 @@ body * {
   .main .main_header {
     width: 100vw;
     line-height: 5vh;
+    margin: 0 auto;
   }
   .main .row {
     width: 100vw;
@@ -2281,6 +2280,7 @@ body * {
   }
   .main .main_header {
     width: 100vw;
+    margin: 0 auto;
   }
   .main .main_header .main_header-logo-left {
     width: auto;
@@ -2288,6 +2288,11 @@ body * {
   }
   .main .main_header .main_header-logo-right {
     width: auto;
+  }
+  .main ul.main_header-logo-right {
+    width: auto;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
   }
   .main .main_slogan {
     width: 90vw;
@@ -2648,6 +2653,27 @@ body * {
   }
   .col-lg-12 {
     width: 100%;
+  }
+  .main .main_header {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .main ul.main_header-logo-right {
+    width: auto;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+  }
+  .main .main_slogan h1 {
+    margin-right: 0;
+  }
+  .main .main_slogan .rectangle-decorative {
+    margin-right: 0;
+  }
+  .main .main_slogan p {
+    margin-right: 0;
+  }
+  .main .main_slogan .default-button {
+    margin-right: 0;
   }
   .about img {
     transform: scale(0.9);
